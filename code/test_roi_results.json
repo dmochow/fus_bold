@@ -1,0 +1,689 @@
+{
+  "analysis_info": {
+    "input_file": "fokker_planck_results.csv",
+    "n_subjects": 3,
+    "n_rois_processed": 5,
+    "n_rois_total": 1024,
+    "conditions": [
+      "active",
+      "sham"
+    ],
+    "periods": [
+      "baseline",
+      "stimulation",
+      "recovery"
+    ],
+    "coefficients": [
+      "drift_0",
+      "drift_1",
+      "diffusion"
+    ],
+    "statistical_test": "independent_t_test",
+    "multiple_corrections": [
+      "bonferroni",
+      "fdr_bh"
+    ]
+  },
+  "roi_results": {
+    "roi_0000": {
+      "roi_index": 0,
+      "roi_label": "Retrocalcarine cortex RH",
+      "periods": {
+        "baseline": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.03187462129197904,
+              "active_std": 0.008835105751011024,
+              "sham_mean": -0.0469611775786573,
+              "sham_std": 0.01934418543222409,
+              "mean_difference": 0.015086556286678265,
+              "t_statistic": 1.2287351616841573,
+              "p_value": 0.28651720744753184,
+              "cohens_d": 1.003258058380791,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.47752867907921975
+            },
+            "drift_1": {
+              "active_mean": 0.0028491484998892664,
+              "active_std": 0.004491761723475525,
+              "sham_mean": -0.011399679468488433,
+              "sham_std": 0.011648184850659453,
+              "mean_difference": 0.0142488279683777,
+              "t_statistic": 1.9768686815887395,
+              "p_value": 0.11922809903498816,
+              "cohens_d": 1.6141065194603073,
+              "p_value_bonferroni": 0.5961404951749407,
+              "p_value_fdr": 0.5961404951749407
+            },
+            "diffusion": {
+              "active_mean": 0.08580680647572007,
+              "active_std": 0.02527946140001535,
+              "sham_mean": 0.10517391976448208,
+              "sham_std": 0.05724745274310849,
+              "mean_difference": -0.019367113288762006,
+              "t_statistic": -0.536026577262605,
+              "p_value": 0.6203593868477971,
+              "cohens_d": -0.4376638676213086,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7754492335597464
+            }
+          }
+        },
+        "stimulation": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.05505030152544186,
+              "active_std": 0.030412888188152652,
+              "sham_mean": -0.05228834829021311,
+              "sham_std": 0.012384390329647253,
+              "mean_difference": -0.0027619532352287507,
+              "t_statistic": -0.14568127845990486,
+              "p_value": 0.8912194586027412,
+              "cohens_d": -0.11894826576769228,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.8912194586027413
+            },
+            "drift_1": {
+              "active_mean": 0.009174366647417767,
+              "active_std": 0.004833491373767547,
+              "sham_mean": 0.012316284835460834,
+              "sham_std": 0.016956211308598437,
+              "mean_difference": -0.0031419181880430677,
+              "t_statistic": -0.30864701637287645,
+              "p_value": 0.7729968740123911,
+              "cohens_d": -0.2520092335819975,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7729968740123911
+            },
+            "diffusion": {
+              "active_mean": 0.1046631631058953,
+              "active_std": 0.04394809723489586,
+              "sham_mean": 0.14031718276689856,
+              "sham_std": 0.022836634400003948,
+              "mean_difference": -0.03565401966100326,
+              "t_statistic": -1.2468810767465786,
+              "p_value": 0.2804671905822581,
+              "cohens_d": -1.0180741359870629,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        },
+        "recovery": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.05894489772599867,
+              "active_std": 0.021585399171458436,
+              "sham_mean": -0.05125738720078817,
+              "sham_std": 0.011334149525464007,
+              "mean_difference": -0.007687510525210495,
+              "t_statistic": -0.5461472180439163,
+              "p_value": 0.6139976924767909,
+              "cohens_d": -0.4459273362160469,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": 0.019483620430515634,
+              "active_std": 0.020953982612829828,
+              "sham_mean": -0.0045172032426147,
+              "sham_std": 0.008622955956742328,
+              "mean_difference": 0.024000823673130334,
+              "t_statistic": 1.8346294922939104,
+              "p_value": 0.14047083778201666,
+              "cohens_d": 1.4979687077271475,
+              "p_value_bonferroni": 0.7023541889100833,
+              "p_value_fdr": 0.7023541889100833
+            },
+            "diffusion": {
+              "active_mean": 0.12789916399702328,
+              "active_std": 0.07901878407930676,
+              "sham_mean": 0.14855895899250868,
+              "sham_std": 0.11973997441057263,
+              "mean_difference": -0.020659794995485398,
+              "t_statistic": -0.24942889050365472,
+              "p_value": 0.8153140950480352,
+              "cohens_d": -0.20365783628083023,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        }
+      }
+    },
+    "roi_0001": {
+      "roi_index": 1,
+      "roi_label": "Superior longitudinal fasciculus II mid-posterior RH",
+      "periods": {
+        "baseline": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.03888193813654744,
+              "active_std": 0.02046552974870401,
+              "sham_mean": -0.05293023943322544,
+              "sham_std": 0.01930492156616786,
+              "mean_difference": 0.014048301296678,
+              "t_statistic": 0.8648764441284668,
+              "p_value": 0.43589200261801553,
+              "cohens_d": 0.7061686595558225,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.5448650032725194
+            },
+            "drift_1": {
+              "active_mean": 0.0048039111439648,
+              "active_std": 0.006652074636953294,
+              "sham_mean": -0.003849320249001933,
+              "sham_std": 0.017311461471152586,
+              "mean_difference": 0.008653231392966733,
+              "t_statistic": 0.8081642302071212,
+              "p_value": 0.46431695841913007,
+              "cohens_d": 0.6598633307922022,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7738615973652169
+            },
+            "diffusion": {
+              "active_mean": 0.10327336892495664,
+              "active_std": 0.034919176740346766,
+              "sham_mean": 0.11246600532770307,
+              "sham_std": 0.028929677131046265,
+              "mean_difference": -0.009192636402746424,
+              "t_statistic": -0.3511236637154959,
+              "p_value": 0.7432092973602231,
+              "cohens_d": -0.2866912709065191,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7432092973602231
+            }
+          }
+        },
+        "stimulation": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.05152217403014473,
+              "active_std": 0.017498670598218913,
+              "sham_mean": -0.048771735695672204,
+              "sham_std": 0.006891904733129152,
+              "mean_difference": -0.002750438334472527,
+              "t_statistic": -0.2533050745900114,
+              "p_value": 0.8125186642200498,
+              "cohens_d": -0.20682272733438692,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": 0.0095420943474197,
+              "active_std": 0.011407153273737548,
+              "sham_mean": 0.018124839558407966,
+              "sham_std": 0.01890791709460995,
+              "mean_difference": -0.008582745210988266,
+              "t_statistic": -0.6731944661643844,
+              "p_value": 0.5377168228865055,
+              "cohens_d": -0.5496609799226856,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.6721460286081318
+            },
+            "diffusion": {
+              "active_mean": 0.16111729952583334,
+              "active_std": 0.04120352732604045,
+              "sham_mean": 0.13415994249710364,
+              "sham_std": 0.047330954944831416,
+              "mean_difference": 0.0269573570287297,
+              "t_statistic": 0.744051234028099,
+              "p_value": 0.49817821087405767,
+              "cohens_d": 0.6075152886189981,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        },
+        "recovery": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.0493042309409378,
+              "active_std": 0.013121371814930461,
+              "sham_mean": -0.0435780797561725,
+              "sham_std": 0.010750072044842265,
+              "mean_difference": -0.005726151184765299,
+              "t_statistic": -0.5846924804066366,
+              "p_value": 0.5901452211391189,
+              "cohens_d": -0.4773994111461702,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": 0.010085639940229233,
+              "active_std": 0.010368668347796163,
+              "sham_mean": 0.010819202212856635,
+              "sham_std": 0.022086298764990228,
+              "mean_difference": -0.0007335622726274017,
+              "t_statistic": -0.05207444041270112,
+              "p_value": 0.960966218483987,
+              "cohens_d": -0.04251860255069507,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.960966218483987
+            },
+            "diffusion": {
+              "active_mean": 0.14327926259320317,
+              "active_std": 0.03019209828714294,
+              "sham_mean": 0.17469327618137995,
+              "sham_std": 0.10333072261618215,
+              "mean_difference": -0.031414013588176776,
+              "t_statistic": -0.5054344052364631,
+              "p_value": 0.6398329702862058,
+              "cohens_d": -0.4126854637588109,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        }
+      }
+    },
+    "roi_0002": {
+      "roi_index": 2,
+      "roi_label": "Arcuate fasciculus mid-anterior RH",
+      "periods": {
+        "baseline": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.04041654066836334,
+              "active_std": 0.005728363819036268,
+              "sham_mean": -0.05358002830371456,
+              "sham_std": 0.03534348823532888,
+              "mean_difference": 0.013163487635351225,
+              "t_statistic": 0.6367831996697204,
+              "p_value": 0.5588844201078431,
+              "cohens_d": 0.5199313053225443,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.5588844201078431
+            },
+            "drift_1": {
+              "active_mean": 0.0006112894215587,
+              "active_std": 0.002595647397785356,
+              "sham_mean": 0.005610497947537767,
+              "sham_std": 0.009484178733310158,
+              "mean_difference": -0.0049992085259790665,
+              "t_statistic": -0.8805981444590479,
+              "p_value": 0.42826571825183335,
+              "cohens_d": -0.7190053741221125,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "diffusion": {
+              "active_mean": 0.07133686973884203,
+              "active_std": 0.01362123296955844,
+              "sham_mean": 0.11626294617396926,
+              "sham_std": 0.07674429944271113,
+              "mean_difference": -0.044926076435127235,
+              "t_statistic": -0.9983387267161431,
+              "p_value": 0.3746147851013492,
+              "cohens_d": -0.8151401569714702,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.9365369627533731
+            }
+          }
+        },
+        "stimulation": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.034826897173624936,
+              "active_std": 0.007873785891299875,
+              "sham_mean": -0.04177868553460217,
+              "sham_std": 0.0041766031647766716,
+              "mean_difference": 0.006951788360977235,
+              "t_statistic": 1.3509402305882092,
+              "p_value": 0.24807528284287758,
+              "cohens_d": 1.1030380793129866,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": 0.0018322105914434332,
+              "active_std": 0.0070048968788668405,
+              "sham_mean": 0.009350166688605,
+              "sham_std": 0.011253956643753256,
+              "mean_difference": -0.007517956097161566,
+              "t_statistic": -0.9823124908628765,
+              "p_value": 0.3815619692152443,
+              "cohens_d": -0.8020547901921368,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.6359366153587406
+            },
+            "diffusion": {
+              "active_mean": 0.10007919991818359,
+              "active_std": 0.02959453279589385,
+              "sham_mean": 0.11313894492374195,
+              "sham_std": 0.040891541361183205,
+              "mean_difference": -0.013059745005558357,
+              "t_statistic": -0.44812532530373084,
+              "p_value": 0.6772636986726268,
+              "cohens_d": -0.3658927959376212,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        },
+        "recovery": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.060696251518279294,
+              "active_std": 0.024778984948614118,
+              "sham_mean": -0.05232206361051753,
+              "sham_std": 0.013856253299644572,
+              "mean_difference": -0.008374187907761767,
+              "t_statistic": -0.5109018378561433,
+              "p_value": 0.6363260952265911,
+              "cohens_d": -0.41714960379923244,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7954076190332389
+            },
+            "drift_1": {
+              "active_mean": 0.004430308107801166,
+              "active_std": 0.009024295833100411,
+              "sham_mean": -0.007396771618955103,
+              "sham_std": 0.0073133383529631266,
+              "mean_difference": 0.01182707972675627,
+              "t_statistic": 1.7635810587008443,
+              "p_value": 0.15257784527342955,
+              "cohens_d": 1.4399579046181386,
+              "p_value_bonferroni": 0.7628892263671477,
+              "p_value_fdr": 0.38144461318357387
+            },
+            "diffusion": {
+              "active_mean": 0.09537617888016985,
+              "active_std": 0.052626343330159316,
+              "sham_mean": 0.1034409149095865,
+              "sham_std": 0.019074861399495022,
+              "mean_difference": -0.008064736029416653,
+              "t_statistic": -0.2495422507336051,
+              "p_value": 0.8152322943143678,
+              "cohens_d": -0.20375039452099786,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        }
+      }
+    },
+    "roi_0003": {
+      "roi_index": 3,
+      "roi_label": "Cerebrospinal fluid (between middle frontal gyrus anterior and skull)",
+      "periods": {
+        "baseline": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.0352263558742457,
+              "active_std": 0.005517808214966673,
+              "sham_mean": -0.027309082496376164,
+              "sham_std": 0.0026889226618018332,
+              "mean_difference": -0.007917273377869533,
+              "t_statistic": -2.2340913141195284,
+              "p_value": 0.0892048084087587,
+              "cohens_d": -1.8241279194589255,
+              "p_value_bonferroni": 0.44602404204379353,
+              "p_value_fdr": 0.44602404204379353
+            },
+            "drift_1": {
+              "active_mean": 0.0057065801421765545,
+              "active_std": 0.01327470735659123,
+              "sham_mean": -0.0004882697164786667,
+              "sham_std": 0.018620468094110672,
+              "mean_difference": 0.006194849858655221,
+              "t_statistic": 0.4692082190063207,
+              "p_value": 0.6633535026362449,
+              "cohens_d": 0.3831069065618485,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.6633535026362449
+            },
+            "diffusion": {
+              "active_mean": 0.08434100636269333,
+              "active_std": 0.007242738055539193,
+              "sham_mean": 0.16888934316196558,
+              "sham_std": 0.18236415703474562,
+              "mean_difference": -0.08454833679927225,
+              "t_statistic": -0.8023871527188787,
+              "p_value": 0.4672930383128994,
+              "cohens_d": -0.6551463667752976,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7788217305214991
+            }
+          }
+        },
+        "stimulation": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.035769113060859066,
+              "active_std": 0.020447888409529467,
+              "sham_mean": -0.03112296804827853,
+              "sham_std": 0.018627726307703166,
+              "mean_difference": -0.004646145012580535,
+              "t_statistic": -0.2909322886781374,
+              "p_value": 0.7855648421338133,
+              "cohens_d": -0.2375452189871774,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": -0.012739382901431034,
+              "active_std": 0.017761338570898684,
+              "sham_mean": 0.01594245014038623,
+              "sham_std": 0.002795148723241344,
+              "mean_difference": -0.028681833041817265,
+              "t_statistic": -2.7629908878416254,
+              "p_value": 0.05069386205645661,
+              "cohens_d": -2.2559726130571494,
+              "p_value_bonferroni": 0.25346931028228303,
+              "p_value_fdr": 0.25346931028228303
+            },
+            "diffusion": {
+              "active_mean": 0.12133917307548363,
+              "active_std": 0.04802745309504042,
+              "sham_mean": 0.13394177303149,
+              "sham_std": 0.05681258810320402,
+              "mean_difference": -0.012602599956006363,
+              "t_statistic": -0.29341963837927365,
+              "p_value": 0.7837952615841032,
+              "cohens_d": -0.23957613151372667,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.979744076980129
+            }
+          }
+        },
+        "recovery": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.0304288463277278,
+              "active_std": 0.009216253374350844,
+              "sham_mean": -0.02920118154198027,
+              "sham_std": 0.011778212833566308,
+              "mean_difference": -0.0012276647857475294,
+              "t_statistic": -0.14218075165370747,
+              "p_value": 0.8938111653015024,
+              "cohens_d": -0.11609009759898625,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.8938111653015024
+            },
+            "drift_1": {
+              "active_mean": 0.016946435753108936,
+              "active_std": 0.03420431610209696,
+              "sham_mean": 0.002268651418346567,
+              "sham_std": 0.00821561085829931,
+              "mean_difference": 0.014677784334762368,
+              "t_statistic": 0.722704145085252,
+              "p_value": 0.5098577236899061,
+              "cohens_d": 0.5900854634844035,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.6373221546123826
+            },
+            "diffusion": {
+              "active_mean": 0.0822013823786913,
+              "active_std": 0.04917027601483516,
+              "sham_mean": 0.08735565228418596,
+              "sham_std": 0.017591553228003192,
+              "mean_difference": -0.0051542699054946545,
+              "t_statistic": -0.17095073760967947,
+              "p_value": 0.8725616129333387,
+              "cohens_d": -0.1395806927653761,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.8725616129333387
+            }
+          }
+        }
+      }
+    },
+    "roi_0004": {
+      "roi_index": 4,
+      "roi_label": "Precentral sulcus mid-inferior RH",
+      "periods": {
+        "baseline": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.0345001341756646,
+              "active_std": 0.011271248438097193,
+              "sham_mean": -0.0205000259711049,
+              "sham_std": 0.0037027070382663688,
+              "mean_difference": -0.014000108204559703,
+              "t_statistic": -2.043930623063717,
+              "p_value": 0.11044911653505723,
+              "cohens_d": -1.6688623653850017,
+              "p_value_bonferroni": 0.5522455826752861,
+              "p_value_fdr": 0.27612279133764306
+            },
+            "drift_1": {
+              "active_mean": -0.004667102812534234,
+              "active_std": 0.003105419115204352,
+              "sham_mean": 1.907975145730029e-05,
+              "sham_std": 0.014941687200851787,
+              "mean_difference": -0.004686182563991534,
+              "t_statistic": -0.5318599437315532,
+              "p_value": 0.6229902309352631,
+              "cohens_d": -0.43426182558922594,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.7787377886690788
+            },
+            "diffusion": {
+              "active_mean": 0.06250679847719413,
+              "active_std": 0.0121241569136976,
+              "sham_mean": 0.07710192394236277,
+              "sham_std": 0.01124660878372732,
+              "mean_difference": -0.01459512546516864,
+              "t_statistic": -1.5286377162025546,
+              "p_value": 0.20108175885718024,
+              "cohens_d": -1.2481274687565531,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        },
+        "stimulation": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.027344953894099838,
+              "active_std": 0.011761694645431779,
+              "sham_mean": -0.0313518449929834,
+              "sham_std": 0.010545452234753953,
+              "mean_difference": 0.004006891098883563,
+              "t_statistic": 0.43933376242668554,
+              "p_value": 0.6831110032253882,
+              "cohens_d": 0.3587145149075026,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": 0.0036898201345758335,
+              "active_std": 0.011507156202122096,
+              "sham_mean": -0.008400879705478566,
+              "sham_std": 0.002784057203616996,
+              "mean_difference": 0.0120906998400544,
+              "t_statistic": 1.7688512723835699,
+              "p_value": 0.15164262593349243,
+              "cohens_d": 1.4442610160708425,
+              "p_value_bonferroni": 0.7582131296674621,
+              "p_value_fdr": 0.37910656483373106
+            },
+            "diffusion": {
+              "active_mean": 0.07577364461466894,
+              "active_std": 0.024922958127690107,
+              "sham_mean": 0.0733119914640329,
+              "sham_std": 0.01824547748072427,
+              "mean_difference": 0.0024616531506360395,
+              "t_statistic": 0.13803894331571387,
+              "p_value": 0.8968797312531455,
+              "cohens_d": 0.11270832525215656,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.8968797312531456
+            }
+          }
+        },
+        "recovery": {
+          "n_active": 3,
+          "n_sham": 3,
+          "coefficients": {
+            "drift_0": {
+              "active_mean": -0.03721429099325347,
+              "active_std": 0.00645101104781516,
+              "sham_mean": -0.04913942007937593,
+              "sham_std": 0.013552044487271486,
+              "mean_difference": 0.011925129086122463,
+              "t_statistic": 1.3761592952330868,
+              "p_value": 0.24079172101875004,
+              "cohens_d": 1.1236293593697246,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            },
+            "drift_1": {
+              "active_mean": -0.011807290239330965,
+              "active_std": 0.015375527652675169,
+              "sham_mean": 0.0017863338488768668,
+              "sham_std": 0.0052010656032273,
+              "mean_difference": -0.013593624088207832,
+              "t_statistic": -1.450575180672406,
+              "p_value": 0.22051288221515192,
+              "cohens_d": -1.184389675397638,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 0.3675214703585865
+            },
+            "diffusion": {
+              "active_mean": 0.12235103088964738,
+              "active_std": 0.05356242697358195,
+              "sham_mean": 0.11435331808733623,
+              "sham_std": 0.029439587988678396,
+              "mean_difference": 0.007997712802311152,
+              "t_statistic": 0.22664435989950846,
+              "p_value": 0.8318116267935716,
+              "cohens_d": 0.18505434494450165,
+              "p_value_bonferroni": 1.0,
+              "p_value_fdr": 1.0
+            }
+          }
+        }
+      }
+    }
+  }
+}
