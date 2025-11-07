@@ -15,6 +15,8 @@
 
 *You should start with (A), as it is an anatomical MRI processing exercise*
 
+*Note: our target is the right subgenual anterior cingulate -- see [here](sgACC.png)*
+
 A. Ultrasound targeting & “dose–response” modeling
 
 Right now targeting is described qualitatively. Turn it into a quantitative modeling section:
