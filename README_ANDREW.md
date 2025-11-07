@@ -18,11 +18,11 @@
 A. Ultrasound targeting & “dose–response” modeling
 
 Right now targeting is described qualitatively. Turn it into a quantitative modeling section:
-	1.	For each subject:
+    1.  For each subject:
         - Compute skull-to-target path length, incidence angle, etc.
         - Use a simple layered medium or (if you can) k-Wave/Sim4Life-style simulation to estimate in situ pressure/Ispta at sgACC.
         - Derive a per-subject dose metric (e.g., estimated in situ Ispta or normalized pressure at sgACC).
-	2.	Correlate dose with:
+    2.  Correlate dose with:
         - change in sgACC global FC (during, post)
         - % of strengthened sgACC edges
         - slope of dFC increase in the post period
@@ -32,17 +32,17 @@ If we could find a monotonic relationship, even trend-level, it would be gold.
 B. Network-level specificity instead of “lots of edges went up”
 
 Right now you show histograms and proportions of strengthened edges.
-	1.	Canonical network analysis
+    1.  Canonical network analysis
         - Assign ROIs to DMN, salience, limbic, FPN, etc.
         - For each network:
             - sgACC-to-network FC change (active vs sham, during & post).
             - Ask: is sgACC preferentially integrating into limbic/DMN/affective control circuits vs everything?
-	2.	Graph-theoretic metrics
+    2.  Graph-theoretic metrics
         - Compute, for sgACC:
             - degree/strength, participation coefficient, within- vs between-network connectivity, eigenvector centrality.
             - Pre vs during vs post, active vs sham.
         - Show sgACC becomes more integrative hub-like after tFUS (or more embedded in specific networks).
-	3.	Network-Based Statistic (NBS) or FDR-controlled edgewise maps
+    3.  Network-Based Statistic (NBS) or FDR-controlled edgewise maps
         - Identify a connected subnetwork of edges significantly modulated by active vs sham.
         - Visualize as a network centered on sgACC, not just a bar.
 
@@ -50,23 +50,23 @@ Right now you show histograms and proportions of strengthened edges.
 C. Proper temporal dynamics: from “slow increase” to state/trajectory model
 
 Your EMBC version has sliding-window dFC; you note a slow increase.  ￼ Let’s get more serious:
-	1.	Event-locked dFC to each sonication
+    1.  Event-locked dFC to each sonication
         - For each of the 5 sonications, compute sgACC–whole-brain FC in windows before/after.
         - Average across events.
         - Test for cumulative ramping (e.g., linear mixed model: FC ~ sonication_index × condition).
-	2.	State-based analysis
+    2.  State-based analysis
         - Use simple k-means or HMM on dFC to define a few connectivity “states”.
         - Test whether active tFUS increases occupancy of high-sgACC-integration states vs sham, especially post.
-	3.	Simple plasticity-like modeling
+    3.  Simple plasticity-like modeling
         - Fit an exponential or linear-growth + decay model to sgACC global FC over time.
         - Compare τ parameters between active and sham; interpret as putative synaptic/plasticity timescale.
 
 D. Effective connectivity: directional story (selective, not overkill)
 
 You don’t need a monstrous DCM paper; a focused effective connectivity analysis on a small ROI set is enough:
-	1.	Choose a priori nodes:
+    1.  Choose a priori nodes:
         - sgACC, mPFC, amygdala, PCC, ventral striatum / thalamus (keep it lean).
-	2.	Use:
+    2.  Use:
         - PPI: is the sgACC “contextual coupling” to these regions strengthened specifically during active tFUS?
         - Or a small-signal spectral DCM model comparing baseline vs post, active vs sham.
 
@@ -75,26 +75,26 @@ Even a modest result like “sgACC → dmPFC influence increases post-tFUS in ac
 E. Control & robustness analyses (boring but absolutely essential)
 
 These are low-risk/high-value and add substantial new methods text:
-	1.	Motion & physiological confounds
+    1.  Motion & physiological confounds
         - Show FD, DVARS, scrubbed volumes are matched across conditions/segments.
         - Re-run FC with aggressive motion/CompCor regression; show results hold.
-	2.	Global signal / nuisance robustness
+    2.  Global signal / nuisance robustness
         - Repeat key analyses:
         - with and without global signal regression,
         - using partial correlations controlling for global signal.
         - If effects survive → strong claim of non-artifactual neuromodulation.
-	3.	Permutation / bootstrap
+    3.  Permutation / bootstrap
         - Subject-label or condition-label permutations to estimate null distribution of sgACC FC change.
         - Edgewise/NBS corrections to prove effects aren’t p-hacked.
-	4.	Reliability across runs
+    4.  Reliability across runs
         - If feasible, show consistency of sgACC modulation across sonications within individuals.
 
 F. Individual differences + relevance to depression circuitry
 
 Leverage what’s special about sgACC:
-	1.	Baseline-dependent effects
+    1.  Baseline-dependent effects
         - Test whether subjects with lower baseline sgACC FC show larger increases (a “normalization”-like pattern reminiscent of TRD connectivity findings).  ￼
-	2.	Relate to structural factors
+    2.  Relate to structural factors
         - Distance to focus / skull density ratio vs FC effect (ties back to dose modeling).
-	3.	Translational bridge paragraph
+    3.  Translational bridge paragraph
         - Explicitly map your modulation pattern onto known sgACC abnormalities in depression and emerging sgACC-tFUS clinical work.  ￼
