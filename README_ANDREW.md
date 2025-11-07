@@ -1,5 +1,9 @@
 ## Overview and Instructions for Andrew Birnbaum Independent Study
 
+## Data
+- Too big for github
+- Sample anatomicals are [here](https://www.dropbox.com/scl/fo/p8xonn1wj6u3zmaomz2s6/AILrK4NfFAFUl1OhFIjGl50?rlkey=f4v4twth7uolnzitnte7xc3nt&dl=0)
+
 ## High-level overview
 - Instead of going after stochastic thermodynamics, we are pivoting into extending the analysis of BOLD functional connectivity (FC) that was published at this year's EMBC conference [paper](./EMBS_conference_paper.pdf)
 - We need to extend the paper as described in this [email](./email_invitation.rtf)
