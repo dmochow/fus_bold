@@ -1,0 +1,83 @@
+\documentclass[journal,draftclsnofoot,onecolumn]{IEEEtran}
+
+% *** PACKAGES ***
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{color}
+
+\newcommand{\etal}{\textit{et~al.}}
+
+\begin{document}
+
+\title{Insert Title: Focused Ultrasound Modulation of BOLD Functional Connectivity}
+
+\author{First~A. Author,~\IEEEmembership{Member,~IEEE}, Second~B. Author, and Third~C. Author%
+\thanks{Manuscript received Month DD, YYYY; revised Month DD, YYYY; accepted Month DD, YYYY. Date of publication Month DD, YYYY; date of current version Month DD, YYYY. This work was supported by XYZ (grant number). (Corresponding author: First Author.)}%
+\thanks{First Author and Second Author are with the Department of Biomedical Engineering, Example University, City, State ZIP, USA (e-mail: first.author@example.edu).}%
+\thanks{Third Author is with the Department of Neurology, Example Medical Center, City, State ZIP, USA.}%
+\thanks{Color versions of one or more of the figures in this article are available online at https://ieeexplore.ieee.org.}%
+\thanks{Digital Object Identifier (DOI): 10.1109/TBME.XXXX.XXXXXXX}}
+
+\markboth{IEEE Transactions on Biomedical Engineering,~Vol.~XX, No.~XX, Month~20XX}%
+{Author \MakeLowercase{\textit{et al.}}: Insert Running Title}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\begin{IEEEkeywords}
+\input{sections/keywords}
+\end{IEEEkeywords}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/introduction}
+
+\section{Materials and Methods}
+\label{sec:methods}
+\input{sections/methods}
+
+\section{Results}
+\label{sec:results}
+\input{sections/results}
+
+\section{Discussion}
+\label{sec:discussion}
+\input{sections/discussion}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\input{sections/conclusion}
+
+\section*{Acknowledgments}
+\input{sections/acknowledgments}
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\appendices
+\section{Extended Methods}
+\label{sec:appendix}
+\input{sections/appendix}
+
+\section*{Data Availability}
+The data that support the findings of this study will be made available from the corresponding author upon reasonable request, subject to institutional review board restrictions.
+
+\section*{Code Availability}
+The analysis code is available at \href{https://github.com/USERNAME/REPO}{https://github.com/USERNAME/REPO}.
+
+\nocite{smith2020fus,doe2021bold}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

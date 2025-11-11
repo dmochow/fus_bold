@@ -1,0 +1,64 @@
+%Present key findings in the order they appear in the figures:
+%\begin{enumerate}
+%    \item Baseline network architecture and regional connectivity strengths.
+%    \item Acute changes in functional connectivity following FUS stimulation, highlighting statistically significant increases/decreases.
+%    \item Dose-response or targeting-accuracy analyses that contextualize variability across sessions or participants.
+%\end{enumerate}
+%Each subsection should reference the corresponding figure or table and summarize statistical outcomes (test statistics, $p$-values, confidence intervals).
+
+\subsubsection*{Mixed-effects analysis of sgACC connectivity}
+
+To formally assess whether transcranial focused ultrasound (tFUS) modulated sgACC-centered connectivity beyond sham, we fit a subject-level linear mixed-effects model. For each subject, condition (sham, active), and time window (pre, tFUS, post), we computed the mean FC between the sgACC parcel and all other DiFuMo parcels, yielding one sgACC--whole-brain FC value per cell (16 subjects $\times$ 2 conditions $\times$ 3 time windows $=$ 96 observations). Time window and condition were modeled as categorical fixed effects with \textit{pre} and \textit{sham} as reference levels, and a random intercept for subject accounted for repeated measures. This parameterization allowed us to test directly whether the change in sgACC FC from pre to tFUS and pre to post differed between active and sham sessions (time$\times$condition interaction), while avoiding edge-wise pseudoreplication.
+
+The resulting model (Table~\ref{tab:mixedlm_sgacc}) revealed three key features of the sgACC connectivity trajectory. First, at baseline, mean sgACC FC was significantly lower in the active session than in the sham session (Condition: active vs.\ sham at pre, $\beta = -0.061$, 95\% CI $[-0.112,-0.010]$, $p = 0.019$), indicating that any subsequent effects cannot be attributed to more favorable starting connectivity in the active condition. Second, within the sham condition, sgACC FC did not change reliably over time (tFUS vs.\ pre: $\beta = -0.020$, $p = 0.444$; post vs.\ pre: $\beta = -0.011$, $p = 0.671$), consistent with a lack of systematic drift. Third, and most importantly, the post-sonication time$\times$condition interaction was significant: the additional pre-to-post change in the active session relative to sham was positive ($\beta = 0.079$, 95\% CI $[0.006,0.151]$, $p = 0.033$), demonstrating a stimulation-specific enhancement of sgACC FC. The corresponding interaction at the tFUS window showed a similar but nonsignificant tendency ($\beta = 0.060$, $p = 0.104$). Together, these results support a conservative but robust conclusion that active tFUS to sgACC is associated with an increased sgACC-centered connectivity from pre to post that is not observed in sham.
+
+We next visualized these subject-level effects using violin plots of mean sgACC--whole-brain FC across time windows for sham and active sessions (Fig.~\ref{fig:sgacc_violin_2panel}). In the sham condition (Fig.~\ref{fig:sgacc_violin_2panel}A), sgACC FC exhibits no systematic monotonic change from pre to tFUS to post, and individual trajectories fluctuate around a stable mean, in line with the nonsignificant time effects. In contrast, the active tFUS condition (Fig.~\ref{fig:sgacc_violin_2panel}B) shows a clear ramping pattern: sgACC FC increases from a lower baseline at pre to higher values during tFUS and reaches its highest levels post-sonication. The alignment of individual trajectories with the model-based interaction effect visually reinforces the conclusion that active tFUS induces a selective, post-sonication strengthening of sgACC-centered functional connectivity.
+
+\begin{table}[t]
+    \centering
+    \caption{Linear mixed-effects model of subject-level mean sgACC functional connectivity. 
+    The dependent variable is the mean sgACC--whole-brain FC for each subject, condition, 
+    and time window. Time window (pre, fus, post) and condition (sham, active) are coded 
+    categorically with \textit{pre} and \textit{sham} as reference levels. The model includes 
+    a random intercept for subject. The key effect of interest is the post-sonication 
+    time~$\times$~condition interaction, indicating a larger pre-to-post increase in sgACC FC 
+    for active tFUS relative to sham.}
+    \label{tab:mixedlm_sgacc}
+    \begin{tabular}{lccccc}
+    \toprule
+    Effect & Estimate & SE & $z$ & $p$-value & 95\% CI \\
+    \midrule
+    Intercept (sham, pre)                                       & 0.121 & 0.021 &  5.89 & $<0.001$ & [0.081,\ 0.161] \\
+    Time: fus vs.\ pre (sham)                                  &-0.020 & 0.026 & -0.77 & 0.444   & [-0.071,\ 0.031] \\
+    Time: post vs.\ pre (sham)                                 &-0.011 & 0.026 & -0.42 & 0.671   & [-0.062,\ 0.040] \\
+    Condition: active vs.\ sham (at pre)                       &-0.061 & 0.026 & -2.34 & 0.019   & [-0.112,\ -0.010] \\
+    Interaction: (fus vs.\ pre) $\times$ (active vs.\ sham)    & 0.060 & 0.037 &  1.63 & 0.104   & [-0.012,\ 0.133] \\
+    Interaction: (post vs.\ pre) $\times$ (active vs.\ sham)   & 0.079 & 0.037 &  2.13 & 0.033   & [0.006,\ 0.151] \\
+    \midrule
+    Subject random intercept variance                          & 0.001 &       &       &         &              \\
+    Residual variance                                          & 0.0055&       &       &         &              \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=\linewidth]{/Users/jacekdmochowski/PROJECTS/fus_bold/figures/fc_change_vs_fc_baseline_violin_plot.png}
+        \caption{
+        \textbf{Subject-level sgACC connectivity across time in sham and active tFUS sessions.}
+        (A) Sham condition. Violin plots depict the distribution of mean sgACC--whole-brain functional
+        connectivity (FC) across subjects at each time window (Pre, tFUS, Post), with semi-transparent
+        violins indicating density, individual points indicating subject-level means, and thin lines
+        connecting repeated measures within subjects. sgACC FC shows no systematic monotonic change
+        over time, consistent with the non-significant time effects in the mixed-effects model
+        (all $p>0.44$).
+        (B) Active tFUS condition. The same visualization reveals a clear ramping pattern, with sgACC FC
+        increasing from a lower baseline at Pre to higher values during tFUS and peaking Post.
+        Annotations summarize key inferential results from the mixed-effects model: sgACC FC is lower
+        in active than sham at baseline ($p=0.019$), yet the pre-to-post increase in sgACC FC is
+        significantly greater for active than sham ($p=0.033$; time$\times$condition interaction),
+        highlighting a stimulation-specific enhancement of sgACC-centered connectivity that is not
+        observed in the sham session.
+        }
+        \label{fig:sgacc_violin_2panel}
+        \end{figure}

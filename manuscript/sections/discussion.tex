@@ -1,0 +1,12 @@
+%Interpret the observed connectivity changes in light of prior FUS neuromodulation literature. Address:
+%\begin{itemize}
+%    \item Biological mechanisms that could explain the modulation of sgACC-centered networks.
+%    \item Clinical implications for treating mood disorders or pain.
+%    \item Limitations such as sample size, targeting accuracy, or confounding physiological signals.
+%    \item Future directions for closed-loop stimulation, multi-modal imaging, or larger cohorts.
+%\end{itemize}
+%Close with a concise statement that reinforces the manuscript's contribution to biomedical engineering.
+
+\subsubsection*{Interpretation and rigor of the mixed-effects inference}
+
+By moving to a subject-level mixed-effects framework, we obtain a conservative and transparent assessment of how tFUS modulates sgACC-centered connectivity over time. This model explicitly acknowledges (i) the within-subject structure of the design, (ii) the non-independence of individual sgACC--target edges, and (iii) the empirically observed baseline difference between active and sham sessions. Within this rigorous setup, the key finding is that sgACC connectivity shows a significantly larger increase from pre- to post-sonication in the active condition than in the sham condition, as captured by the positive $\beta_5$ interaction term. In other words, after accounting for each subject's baseline sgACC FC---and without assuming equal starting points---active tFUS is associated with a selective, sustained enhancement of sgACC functional coupling that is not explained by sham or generic temporal drift. The absence of a strong differential effect during stimulation and the modest sample size argue against overclaiming an immediate ``online'' effect in this dataset; instead, the pattern is more consistent with a delayed or accumulating influence of tFUS on sgACC network integration. Importantly, because this analysis treats subjects as the unit of inference and models differences-in-differences directly, it avoids inflated precision from edge-wise pseudoreplication. % and provides a statistically defensible foundation on which to build the extended mechanistic and network-level analyses for the full TBME manuscript.

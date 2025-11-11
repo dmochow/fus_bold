@@ -1,0 +1,37 @@
+Describe participant selection, ethics approvals, imaging protocols, preprocessing, and statistical analyses. Structure the section with descriptive subheadings such as:
+\subsection{Participants and Study Design}
+Summarize demographics, inclusion/exclusion criteria, and experimental timeline. Reference relevant IRB approvals and informed consent procedures.
+
+\subsection{Focused Ultrasound Targeting}
+Provide acoustic parameters (frequency, pulse repetition, duty cycle, intensity) and targeting workflow (e.g., neuronavigation, safety monitoring).
+
+\subsection{MRI Acquisition}
+Detail scanner hardware, BOLD sequence parameters, structural scans, and physiological monitoring.
+
+\subsection{Preprocessing and Quality Control}
+Outline motion correction, susceptibility distortion correction, spatial normalization, temporal filtering, and frame censoring thresholds.
+
+\subsection{Functional Connectivity Analysis}
+%Explain how seed-based, network, or graph-theoretic metrics were computed, including baseline vs. post-FUS windows, statistical models, and multiple-comparison corrections.
+
+\subsubsection*{Mixed-effects analysis of sgACC connectivity}
+
+To formally test whether transcranial focused ultrasound (tFUS) altered the temporal evolution of subgenual ACC (sgACC) connectivity beyond sham, we analyzed sgACC-centered functional connectivity (FC) at the \textit{subject level}, avoiding edge-wise pseudoreplication. For each subject, condition (active, sham), and time window (pre: 60--300 s, fus: 300--600 s, post: 600--900 s), we computed the mean FC between the sgACC DiFuMo parcel and all other DiFuMo parcels, yielding one sgACC--whole-brain summary value per cell (16 subjects $\times$ 2 conditions $\times$ 3 time windows $=$ 96 observations). We then fit a linear mixed-effects model with FC as the dependent variable, fixed effects of time window, condition, and their interaction, and a random intercept for subject to account for repeated measures. Time window and condition were encoded as categorical factors using treatment coding with \textit{pre} and \textit{sham} as reference levels. The model can be written as:
+
+\begin{equation}
+\mathrm{FC}_{i,c,t}
+= \beta_0
++ \beta_1\,\mathbb{I}[t=\mathrm{fus}]
++ \beta_2\,\mathbb{I}[t=\mathrm{post}]
++ \beta_3\,\mathbb{I}[c=\mathrm{active}]
++ \beta_4\,\mathbb{I}[t=\mathrm{fus}]\,\mathbb{I}[c=\mathrm{active}]
++ \beta_5\,\mathbb{I}[t=\mathrm{post}]\,\mathbb{I}[c=\mathrm{active}]
++ b_i + \varepsilon_{i,c,t},
+\end{equation}
+
+where $i$ indexes subjects, $c \in \{\mathrm{sham},\mathrm{active}\}$, $t \in \{\mathrm{pre},\mathrm{fus},\mathrm{post}\}$, $b_i \sim \mathcal{N}(0,\sigma_b^2)$ is a subject-specific random intercept, and $\varepsilon_{i,c,t} \sim \mathcal{N}(0,\sigma^2)$ is the residual error. Under this parameterization, $\beta_0$ is the mean FC at sham--pre; $\beta_3$ is the active--sham difference at pre; $\beta_1$ and $\beta_2$ capture changes over time in sham; and critically, $\beta_4$ and $\beta_5$ quantify whether the pre$\rightarrow$fus and pre$\rightarrow$post changes, respectively, differ between active and sham (difference-in-differences). Models were fit using restricted maximum likelihood (REML) in \texttt{statsmodels} (\texttt{mixedlm}), with convergence and residual distributions checked visually. This subject-level approach ensures that inference reflects between-condition differences in \textit{within-subject} sgACC connectivity trajectories, rather than being driven by the large number of correlated individual edges.
+
+
+
+\subsection{Effect Size and Uncertainty}
+Report how confidence intervals, bootstrap procedures, or Bayesian models were used to quantify uncertainty.
