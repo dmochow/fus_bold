@@ -62,3 +62,89 @@ We next visualized these subject-level effects using violin plots of mean sgACC-
         }
         \label{fig:sgacc_violin_2panel}
         \end{figure}
+
+        
+        \subsubsection*{Results: Baseline predicts decline in sham but not in active; pooled slope difference is significant}
+
+        The pooled model explained substantial variance in \(\Delta \mathrm{FC}\) (\(R^2=0.676\); cluster-robust omnibus \(p=0.017\)). In \textbf{sham}, higher baseline sgACC FC predicted larger subsequent decreases (slope \(=-0.776\), 95\% CI \([-1.370,\,-0.182]\), \(p=0.010\)), consistent with RTM. In \textbf{active}, the baseline--change association was not negative (slope \(=+0.207\), 95\% CI \([-0.575,\,0.989]\), n.s.). Critically, the \textbf{slope difference} between conditions was significant (\(\beta_3=+0.983\), 95\% CI \([0.203,\,1.763]\), \(p=0.013\)), indicating that the mapping from baseline to subsequent change differs under stimulation. Figure~\ref{fig:rtm_slope_by_condition} shows these effects separately for the tFUS and post windows (panels a--d), emphasizing that the sham baseline\(\rightarrow\)\(\Delta \mathrm{FC}\) slope remains negative in both windows whereas the active slope is flat-to-positive, and the equality tests reported in the right column confirm the significant active-vs.-sham divergence.
+
+        \begin{figure}[t]
+            \centering
+            \includegraphics[width=\linewidth]{../figures/rtm_slope_pooled_2panel.png}
+            \caption{\textbf{Baseline sgACC FC predicts decline in sham but not in active (pooled tFUS+Post).} (a) Sham and (b) Active panels show subject-level scatter of baseline sgACC functional connectivity (Pre; x-axis) versus change from baseline $\Delta\mathrm{FC}=\mathrm{FC}{t}-\mathrm{FC}{\mathrm{pre}}$ (y-axis) for the tFUS $(\circ)$ and Post $(\triangle)$ windows. Solid lines depict the condition-wise regression fits from the pooled model with subject fixed effects and a time-window fixed effect (tFUS reference): $\Delta\mathrm{FC}{ict}=\alpha_i+\gamma\,\mathbb{I}[t=\mathrm{post}]+\beta_1\,\widetilde{\mathrm{FC}}{ic,\mathrm{pre}}+\beta_2\,\mathbb{I}[c=\mathrm{active}]+\beta_3\,\widetilde{\mathrm{FC}}{ic,\mathrm{pre}}\times\mathbb{I}[c=\mathrm{active}]+\varepsilon{ict}$. Sham exhibits a negative baseline–change slope (consistent with regression-to-the-mean), whereas Active is flat/positive; the slope difference (Active–Sham) is significant (cluster-robust SEs by subject), indicating a stimulation-specific departure from regression-to-the-mean. \label{fig:rtm_slope_pooled_2panel}}
+        \end{figure}
+        
+    
+        \begin{table}[t]
+            \centering
+            \caption{\textbf{Baseline--change slope test (pooled tFUS + Post).} Ordinary least squares with subject fixed effects and a time-window fixed effect (tFUS reference). The dependent variable is $\Delta \mathrm{FC}_{ict} = \mathrm{FC}_{ict} - \mathrm{FC}_{ic,\mathrm{pre}}$. The primary test is the equality of baseline--change slopes in sham vs.\ active (``Slope difference''). Cluster-robust SEs by subject (16 clusters).}
+            \label{tab:rtm_slope_pooled}
+            \setlength{\tabcolsep}{10pt}
+            \begin{tabular}{lccc}
+            \toprule
+            \textbf{Term} & \textbf{Estimate} & \textbf{95\% CI} & \textbf{$p$} \\
+            \midrule
+            Sham slope $\big(\partial\,\Delta\mathrm{FC}/\partial\,\mathrm{FC}_{\text{pre}}\big)$
+            & $-0.776$ & $[-1.370,\,-0.182]$ & $0.010$ \\
+            Active slope $\big(\partial\,\Delta\mathrm{FC}/\partial\,\mathrm{FC}_{\text{pre}}\big)$
+            & $+0.207$ & $[-0.575,\,0.989]$ & n.s. \\
+            \addlinespace[2pt]
+            \textbf{Slope difference (Active $-$ Sham)} & \textbf{+0.983} & \textbf{[0.203,\,1.763]} & \textbf{0.013} \\
+            \midrule
+            $R^2$ & $0.676$ & & \\
+            $N$ (rows) & $64$ & & \\
+            Clusters (subjects) & $16$ & & \\
+            \bottomrule
+            \multicolumn{4}{p{0.9\linewidth}}{\footnotesize
+            \textit{Model.}
+            $\Delta \mathrm{FC}_{ict}
+            = \alpha_i
+            + \gamma\,\mathbb{I}[t=\mathrm{post}]
+            + \beta_1\,\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}
+            + \beta_2\,\mathbb{I}[c=\mathrm{active}]
+            + \beta_3\,\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}\times \mathbb{I}[c=\mathrm{active}]
+            + \varepsilon_{ict}$,
+            with subject fixed effects $\alpha_i$ and a time-window fixed effect $\gamma$ (tFUS reference).
+            The baseline $\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}$ is mean-centered (centering does not affect slope tests).
+            The ``Active slope'' is the linear combination $\beta_1+\beta_3$; the ``Slope difference'' tests $H_0\!:\beta_3=0$.
+            Observations: $16$ subjects $\times$ $2$ conditions $\times$ $2$ windows $=64$.}
+            \end{tabular}
+            \end{table}
+
+
+    \subsubsection*{Network-level redistribution of sgACC connectivity}
+
+    Having established that sgACC connectivity increases selectively after active stimulation, we next asked which large-scale networks absorb this additional coupling. We worked within the Yeo-7 parcellation (Visual, Control, Default Mode, Dorsal Attention, Limbic, Salience, Somatomotor) and compared subject-level baseline-referenced $\Delta$FC across the \textit{tFUS} and \textit{post} windows. Including the Visual network yields 14 planned contrasts. The Control network still shows the largest active--sham differences---$\Delta$FC $\approx 0.19$ during tFUS and $\approx 0.17$ post---with nominal $p$-values of 0.0039 and 0.0077, respectively, corresponding to FDR-adjusted $q=0.054$ for both windows. Visual network differences remain positive but smaller (change in active--sham $=0.042$ at tFUS; $0.071$ at post), while Salience ($q_{\mathrm{FDR}}=0.17$) and Somatomotor ($q_{\mathrm{FDR}}=0.13$) continue to trend toward greater active-than-sham coupling at post. The Default Mode network retains the opposite polarity (active--sham $\Delta$FC $=-0.039$ at post). These effects are summarized in Table~\ref{tab:network_specificity} and visualized in Fig.~\ref{fig:network_level_specificity}, which was generated directly from \texttt{code/network\_level\_specificity.ipynb}.
+
+\begin{table}[t]
+    \centering
+    \caption{Network-specific change in sgACC functional connectivity ($\Delta$FC relative to each subject's pre window). Means are expressed in Fisher-$z$ units. Reported $p$-values come from Welch two-sample \textit{t}-tests comparing active and sham sessions; $q_{\mathrm{FDR}}$ values reflect Benjamini--Hochberg correction across the 14 contrasts.}
+    \label{tab:network_specificity}
+    \begin{tabular}{llcccccc}
+        \toprule
+        Network & Window & Sham $\Delta$FC & Active $\Delta$FC & $\Delta$ (active $-$ sham) & $t$ & $p$ & $q_{\mathrm{FDR}}$ \\
+        \midrule
+        Visual & tFUS & $-0.026$ & $+0.016$ & $+0.042$ & $+0.88$ & $0.3835$ & $0.4130$ \\
+        Visual & post & $-0.027$ & $+0.044$ & $+0.071$ & $+1.13$ & $0.2683$ & $0.3911$ \\
+        Control & tFUS & $-0.113$ & $+0.075$ & $+0.188$ & $+3.14$ & $0.0039$ & $0.0538$ \\
+        Control & post & $-0.075$ & $+0.095$ & $+0.169$ & $+2.86$ & $0.0077$ & $0.0538$ \\
+        Default Mode & tFUS & $+0.145$ & $+0.087$ & $-0.057$ & $-0.96$ & $0.3450$ & $0.4025$ \\
+        Default Mode & post & $+0.153$ & $+0.114$ & $-0.039$ & $-0.72$ & $0.4761$ & $0.4761$ \\
+        Dorsal Attention & tFUS & $-0.067$ & $-0.007$ & $+0.060$ & $+1.04$ & $0.3093$ & $0.3936$ \\
+        Dorsal Attention & post & $-0.061$ & $+0.017$ & $+0.078$ & $+1.10$ & $0.2794$ & $0.3911$ \\
+        Limbic & tFUS & $-0.115$ & $-0.027$ & $+0.088$ & $+1.35$ & $0.1892$ & $0.3311$ \\
+        Limbic & post & $-0.107$ & $-0.014$ & $+0.093$ & $+1.44$ & $0.1600$ & $0.3311$ \\
+        Salience & tFUS & $-0.119$ & $+0.012$ & $+0.131$ & $+2.04$ & $0.0501$ & $0.1671$ \\
+        Salience & post & $-0.117$ & $+0.037$ & $+0.154$ & $+1.96$ & $0.0597$ & $0.1671$ \\
+        Somatomotor & tFUS & $-0.081$ & $+0.015$ & $+0.096$ & $+1.41$ & $0.1684$ & $0.3311$ \\
+        Somatomotor & post & $-0.099$ & $+0.075$ & $+0.174$ & $+2.33$ & $0.0270$ & $0.1259$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{../figures/network_level_specificity.png}
+    \caption{\textbf{Network-level specificity of sgACC functional connectivity changes.} Panels A and B show the mean baseline-referenced $\Delta$FC (Fisher-$z$ units) between the sgACC seed and each Yeo-7 partner network during the tFUS and post windows for sham (lighter hues) and active (darker hues) sessions, with $\pm$\,SEM error bars. Panel C displays the active--sham difference for each network/time combination, and the bottom-right quadrant carries the legend. Active tFUS produces the largest increases in sgACC coupling with the Control network, modest gains with Salience, Somatomotor, and Visual networks, and reduced engagement with the Default Mode network.}
+    \label{fig:network_level_specificity}
+\end{figure}

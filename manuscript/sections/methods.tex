@@ -32,6 +32,30 @@ To formally test whether transcranial focused ultrasound (tFUS) altered the temp
 where $i$ indexes subjects, $c \in \{\mathrm{sham},\mathrm{active}\}$, $t \in \{\mathrm{pre},\mathrm{fus},\mathrm{post}\}$, $b_i \sim \mathcal{N}(0,\sigma_b^2)$ is a subject-specific random intercept, and $\varepsilon_{i,c,t} \sim \mathcal{N}(0,\sigma^2)$ is the residual error. Under this parameterization, $\beta_0$ is the mean FC at sham--pre; $\beta_3$ is the active--sham difference at pre; $\beta_1$ and $\beta_2$ capture changes over time in sham; and critically, $\beta_4$ and $\beta_5$ quantify whether the pre$\rightarrow$fus and pre$\rightarrow$post changes, respectively, differ between active and sham (difference-in-differences). Models were fit using restricted maximum likelihood (REML) in \texttt{statsmodels} (\texttt{mixedlm}), with convergence and residual distributions checked visually. This subject-level approach ensures that inference reflects between-condition differences in \textit{within-subject} sgACC connectivity trajectories, rather than being driven by the large number of correlated individual edges.
 
 
+\subsubsection*{Pooled baseline--change slope test (tFUS + Post)}
+
+To assess whether the stimulation effects could be attributed to regression-to-the-mean (RTM), we examined how baseline sgACC connectivity relates to subsequent change, \(\Delta \mathrm{FC}\), and whether that baseline--change slope differs between conditions. For each subject \(i\), condition \(c\in\{\text{sham},\text{active}\}\), and follow-up window \(t\in\{\text{tFUS},\text{post}\}\), we defined
+\[
+\Delta \mathrm{FC}_{ict} \;=\; \mathrm{FC}_{ict} - \mathrm{FC}_{ic,\mathrm{pre}}.
+\]
+We then fit a \emph{pooled} ordinary least squares model that includes \textbf{both} follow-up windows for each subject\(\times\)condition (two rows per subject\(\times\)condition; \(N=16\times 2\times 2=64\)). The model uses subject fixed effects \((\alpha_i)\) and a time-window fixed effect (with tFUS as reference) so that mean differences between tFUS and Post are absorbed without estimating separate slopes per window:
+\[
+\Delta \mathrm{FC}_{ict}
+= \alpha_i
++ \gamma\,\mathbb{I}[t=\text{post}]
++ \beta_1\,\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}
++ \beta_2\,\mathbb{I}[c=\text{active}]
++ \beta_3\,\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}\times \mathbb{I}[c=\text{active}]
++ \varepsilon_{ict}.
+\]
+Here, \(\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}\) is the subject\(\times\)condition baseline centered at the pooled mean (centering stabilizes numerics but does not affect slope tests). The coefficient \(\gamma\) captures the \emph{common} Post--tFUS mean shift in \(\Delta \mathrm{FC}\) across conditions; the primary hypothesis test is \(H_0:\beta_3=0\) (equal baseline--change slopes in sham and active). Inference used cluster-robust standard errors with subjects as clusters. For visualization (Fig.~\ref{fig:rtm_slope_pooled_2panel}), we plotted baseline vs.\ \(\Delta \mathrm{FC}\) separately for sham and active, displaying window-specific markers and the corresponding condition-wise regression line implied by the pooled model.
+
+
+\subsubsection*{Network-level specificity analysis}
+
+To test whether the sgACC preferentially reconfigures its coupling with particular large-scale systems, we quantified network-specific FC changes in \texttt{code/network\_level\_specificity.ipynb}. Each DiFuMo parcel was assigned to a Yeo-7 network label using the \texttt{nilearn.datasets.fetch\_atlas\_difumo} metadata, and we retained only sgACC-centered edges whose partner parcel carried a valid Yeo label. DiFuMo sub-components were collapsed into seven canonical networks (Visual, Control, Default Mode, Dorsal Attention, Limbic, Salience, Somatomotor). For every subject, condition, time window, and sgACC--network pair we averaged the Fisher-$z$ FC across all constituent edges and subtracted the same subject's pre-window FC for that pair, yielding a baseline-referenced $\Delta$FC that removes inter-subject offsets.
+
+Subject-wise $\Delta$FC estimates were then averaged across edges belonging to the same network, producing one observation per subject per (network, condition, time window). We restricted inference to the two post-baseline windows (\textit{tFUS} and \textit{post}) and compared active versus sham $\Delta$FC using Welch two-sample \textit{t}-tests, yielding 14 contrasts (7 networks $\times$ 2 windows). Benjamini--Hochberg false-discovery-rate (FDR) correction ($\alpha=0.05$) controlled for the family-wise testing burden. All summary statistics---condition-wise means, active--sham differences, $t$-values, raw $p$-values, and FDR-adjusted $q$-values---are tabulated in Table~\ref{tab:network_specificity}, enabling exact replication of the network-specific inference.
 
 \subsection{Effect Size and Uncertainty}
 Report how confidence intervals, bootstrap procedures, or Bayesian models were used to quantify uncertainty.

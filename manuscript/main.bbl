@@ -20,6 +20,15 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{yeo2011organization}
+B.~T.~T. Yeo, F.~M. Krienen, J.~Sepulcre, M.~R. Sabuncu, D.~Lashkari, M.~Hollinshead, J.~L. Roffman, J.~W. Smoller, L.~Z{\"o}llei, J.~R. Polimeni, B.~Fischl, H.~Liu, and R.~L. Buckner, ``The organization of the human cerebral cortex estimated by intrinsic functional connectivity,'' \emph{Journal of Neurophysiology}, vol. 106, no.~3, pp. 1125--1165, 2011.
+
+\bibitem{cole2013multi}
+M.~W. Cole, J.~R. Reynolds, J.~D. Power, G.~Repovs, A.~Anticevic, and T.~S. Braver, ``Multi-task connectivity reveals flexible hubs for adaptive task control,'' \emph{Nature Neuroscience}, vol.~16, no.~9, pp. 1348--1355, 2013.
+
+\bibitem{whitfield2012default}
+S.~Whitfield-Gabrieli and J.~M. Ford, ``Default mode network activity and connectivity in psychopathology,'' \emph{Annual Review of Clinical Psychology}, vol.~8, pp. 49--76, 2012.
+
 \bibitem{smith2020fus}
 J.~D. Smith and J.~Q. Doe, ``Low-intensity focused ultrasound modulates functional connectivity in primates,'' \emph{IEEE Transactions on Biomedical Engineering}, vol.~67, no.~11, pp. 3203--3214, 2020.
 
