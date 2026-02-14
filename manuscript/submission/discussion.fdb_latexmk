@@ -1,0 +1,12 @@
+# Fdb version 4
+["pdflatex"] 1765296467.49587 "discussion.tex" "discussion.pdf" "discussion" 1765296468.02 2
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "discussion.aux" 1765296467.49451 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "discussion.tex" 1765296396.53613 8097 a6b054e733bb3253667810a03570f86a ""
+  (generated)
+  "discussion.aux"
+  "discussion.log"
+  "discussion.pdf"
+  (rewritten before read)

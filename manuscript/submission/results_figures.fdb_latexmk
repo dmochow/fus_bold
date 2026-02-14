@@ -1,0 +1,12 @@
+# Fdb version 4
+["pdflatex"] 1765296506.80096 "results_figures.tex" "results_figures.pdf" "results_figures" 1765296508.08848 2
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "results_figures.aux" 1765296506.80038 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "results_figures.tex" 1765296413.1497 7270 e76b74a2f6a5b01f7caa35b1756d4289 ""
+  (generated)
+  "results_figures.aux"
+  "results_figures.log"
+  "results_figures.pdf"
+  (rewritten before read)

@@ -1,0 +1,361 @@
+\begin{thebibliography}{64}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Naor et~al.(2016)Naor, Krupa, and Shoham]{Naor2016-wz}
+Omer Naor, Steve Krupa, and Shy Shoham.
+\newblock Ultrasonic neuromodulation.
+\newblock \emph{J. Neural Eng.}, 13\penalty0 (3):\penalty0 031003, June 2016.
+
+\bibitem[Blackmore et~al.(2019{\natexlab{a}})]{blackmore2019mechanisms}
+J.~Blackmore et~al.
+\newblock Mechanisms of ultrasound neuromodulation.
+\newblock \emph{Ultrasound Med Biol}, 2019{\natexlab{a}}.
+
+\bibitem[Tyler et~al.(2008)Tyler, Tufail, Finsterwald, Tauchmann, Olson, and Majestic]{Tyler2008-zs}
+William~J Tyler, Yusuf Tufail, Michael Finsterwald, Monica~L Tauchmann, Emily~J Olson, and Cassondra Majestic.
+\newblock Remote excitation of neuronal circuits using low-intensity, low-frequency ultrasound.
+\newblock \emph{PLoS One}, 3\penalty0 (10):\penalty0 e3511, October 2008.
+
+\bibitem[Tufail et~al.(2010)Tufail, Matyushov, Baldwin, Tauchmann, Georges, Yoshihiro, Tillery, and Tyler]{Tufail2010-jd}
+Yusuf Tufail, Alexei Matyushov, Nathan Baldwin, Monica~L Tauchmann, Joseph Georges, Anna Yoshihiro, Stephen I~Helms Tillery, and William~J Tyler.
+\newblock Transcranial pulsed ultrasound stimulates intact brain circuits.
+\newblock \emph{Neuron}, 66\penalty0 (5):\penalty0 681--694, June 2010.
+
+\bibitem[Legon et~al.(2014{\natexlab{a}})]{legon2014transcranial}
+W.~Legon et~al.
+\newblock Transcranial focused ultrasound modulates the activity of primary somatosensory cortex in humans.
+\newblock \emph{Nat Neurosci}, 2014{\natexlab{a}}.
+
+\bibitem[Legon et~al.(2014{\natexlab{b}})Legon, Sato, Opitz, Mueller, Barbour, Williams, and Tyler]{Legon2014-li}
+Wynn Legon, Tomokazu~F Sato, Alexander Opitz, Jerel Mueller, Aaron Barbour, Amanda Williams, and William~J Tyler.
+\newblock Transcranial focused ultrasound modulates the activity of primary somatosensory cortex in humans.
+\newblock \emph{Nat. Neurosci.}, 17\penalty0 (2):\penalty0 322--329, February 2014{\natexlab{b}}.
+
+\bibitem[Lee et~al.(2016)Lee, Kim, Jung, Chung, Song, Lee, and Yoo]{lee2016transcranial}
+Wonhye Lee, Hyun-Chul Kim, Yujin Jung, Yong~An Chung, In-Uk Song, Jong-Hwan Lee, and Seung-Schik Yoo.
+\newblock Transcranial focused ultrasound stimulation of human primary visual cortex.
+\newblock \emph{Scientific reports}, 6\penalty0 (1):\penalty0 34026, 2016.
+
+\bibitem[Legon et~al.(2018{\natexlab{a}})Legon, Ai, Bansal, and Mueller]{Legon2018-ad}
+Wynn Legon, Leo Ai, Priya Bansal, and Jerel~K Mueller.
+\newblock Neuromodulation with single-element transcranial focused ultrasound in human thalamus.
+\newblock \emph{Hum. Brain Mapp.}, 39\penalty0 (5):\penalty0 1995--2006, May 2018{\natexlab{a}}.
+
+\bibitem[Legon et~al.(2018{\natexlab{b}})Legon, Bansal, Tyshynsky, Ai, and Mueller]{Legon2018-kb}
+Wynn Legon, Priya Bansal, Roman Tyshynsky, Leo Ai, and Jerel~K Mueller.
+\newblock Transcranial focused ultrasound neuromodulation of the human primary motor cortex.
+\newblock \emph{Sci. Rep.}, 8\penalty0 (1):\penalty0 10007, July 2018{\natexlab{b}}.
+
+\bibitem[Sanguinetti et~al.(2020)Sanguinetti, Hameroff, Smith, Sato, Daft, Tyler, and Allen]{sanguinetti2020transcranial}
+Joseph~L Sanguinetti, Stuart Hameroff, Ezra~E Smith, Tomokazu Sato, Chris~MW Daft, William~J Tyler, and John~JB Allen.
+\newblock Transcranial focused ultrasound to the right prefrontal cortex improves mood and alters functional connectivity in humans.
+\newblock \emph{Frontiers in human neuroscience}, 14:\penalty0 494085, 2020.
+
+\bibitem[Zhang et~al.(2021{\natexlab{a}})Zhang, Ren, Liu, Tong, Yuan, and Sun]{zhang2021transcranial}
+Yi~Zhang, Liyuan Ren, Kai Liu, Shanbao Tong, Ti-Fei Yuan, and Junfeng Sun.
+\newblock Transcranial ultrasound stimulation of the human motor cortex.
+\newblock \emph{Iscience}, 24\penalty0 (12), 2021{\natexlab{a}}.
+
+\bibitem[Yaakub et~al.(2023)Yaakub, White, Roberts, Martin, Verhagen, Stagg, Hall, and Fouragnan]{yaakub2023transcranial}
+Siti~N Yaakub, Tristan~A White, Jamie Roberts, Eleanor Martin, Lennart Verhagen, Charlotte~J Stagg, Stephen Hall, and Elsa~F Fouragnan.
+\newblock Transcranial focused ultrasound-mediated neurochemical and functional connectivity changes in deep cortical regions in humans.
+\newblock \emph{Nature Communications}, 14\penalty0 (1):\penalty0 5318, 2023.
+
+\bibitem[Lord et~al.(2024)Lord, Sanguinetti, Ruiz, Miskovic, Segre, Young, Fini, and Allen]{lord2024transcranial}
+Brian Lord, Joseph~L Sanguinetti, Lisannette Ruiz, Vladimir Miskovic, Joel Segre, Shinzen Young, Maria~E Fini, and John~JB Allen.
+\newblock Transcranial focused ultrasound to the posterior cingulate cortex modulates default mode network and subjective experience: an fmri pilot study.
+\newblock \emph{Frontiers in Human Neuroscience}, 18:\penalty0 1392199, 2024.
+
+\bibitem[Blackmore et~al.(2019{\natexlab{b}})Blackmore, Shrivastava, Sallet, Butler, and Cleveland]{Blackmore2019-zo}
+Joseph Blackmore, Shamit Shrivastava, Jerome Sallet, Chris~R Butler, and Robin~O Cleveland.
+\newblock Ultrasound neuromodulation: A review of results, mechanisms and safety.
+\newblock \emph{Ultrasound Med. Biol.}, 45\penalty0 (7):\penalty0 1509--1536, July 2019{\natexlab{b}}.
+
+\bibitem[Kamimura et~al.(2020)Kamimura, Conti, Toschi, and Konofagou]{kamimura2020ultrasound}
+Hermes~AS Kamimura, Allegra Conti, Nicola Toschi, and Elisa~E Konofagou.
+\newblock Ultrasound neuromodulation: Mechanisms and the potential of multimodal stimulation for neuronal function assessment.
+\newblock \emph{Frontiers in physics}, 8:\penalty0 150, 2020.
+
+\bibitem[Dell'Italia et~al.(2022)Dell'Italia, Sanguinetti, Monti, Bystritsky, and Reggente]{dell2022current}
+John Dell'Italia, Joseph~L Sanguinetti, Martin~M Monti, Alexander Bystritsky, and Nicco Reggente.
+\newblock Current state of potential mechanisms supporting low intensity focused ultrasound for neuromodulation.
+\newblock \emph{Frontiers in human neuroscience}, 16:\penalty0 872639, 2022.
+
+\bibitem[Sorum et~al.(2021)Sorum, Rietmeijer, Gopakumar, Adesnik, and Brohawn]{Sorum2021}
+Ben Sorum, Robert~A. Rietmeijer, Karthika Gopakumar, Hillel Adesnik, and Stephen~G. Brohawn.
+\newblock Ultrasound activates mechanosensitive traak k$^+$ channels through the lipid membrane.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 118\penalty0 (6):\penalty0 e2006980118, 2021.
+\newblock \doi{10.1073/pnas.2006980118}.
+
+\bibitem[Kubanek et~al.(2018)Kubanek, Shukla, Das, Baccus, and Goodman]{Kubanek2018-eo}
+Jan Kubanek, Poojan Shukla, Alakananda Das, Stephen~A Baccus, and Miriam~B Goodman.
+\newblock Ultrasound elicits behavioral responses through mechanical effects on neurons and ion channels in a simple nervous system.
+\newblock \emph{J. Neurosci.}, 38\penalty0 (12):\penalty0 3081--3091, March 2018.
+
+\bibitem[Kim et~al.(2022{\natexlab{a}})Kim, Kim, Lee, Hwang, Yoo, and Lee]{Yoo2022}
+Young~Goo Kim, Song~E. Kim, Jihye Lee, Sungeun Hwang, Seung{-}Schik Yoo, and Hyang~Woon Lee.
+\newblock Neuromodulation using transcranial focused ultrasound on the bilateral medial prefrontal cortex.
+\newblock \emph{Journal of Clinical Medicine}, 11\penalty0 (13):\penalty0 3809, 2022{\natexlab{a}}.
+\newblock \doi{10.3390/jcm11133809}.
+
+\bibitem[Krasovitski et~al.(2011)Krasovitski, Frenkel, Shoham, and Kimmel]{krasovitski2011intramembrane}
+Boris Krasovitski, Victor Frenkel, Shy Shoham, and Eitan Kimmel.
+\newblock Intramembrane cavitation as a unifying mechanism for ultrasound-induced bioeffects.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 108\penalty0 (8):\penalty0 3258--3263, 2011.
+
+\bibitem[Plaksin et~al.(2014)Plaksin, Kimmel, and Shoham]{Plaksin2014}
+Michael Plaksin, Eitan Kimmel, and Shy Shoham.
+\newblock Intramembrane cavitation as a predictive bio{-}piezoelectric mechanism for ultrasonic brain stimulation.
+\newblock \emph{Physical Review X}, 4\penalty0 (1):\penalty0 011004, 2014.
+\newblock \doi{10.1103/PhysRevX.4.011004}.
+
+\bibitem[Petrov and Sachs(2002)]{Petrov2002}
+A.~G. Petrov and F.~Sachs.
+\newblock Flexoelectricity and elasticity of asymmetric biomembranes.
+\newblock \emph{Physical Review E}, 65\penalty0 (2):\penalty0 021905, 2002.
+\newblock \doi{10.1103/PhysRevE.65.021905}.
+
+\bibitem[Mishima et~al.(2024)Mishima, Komano, Tabaru, Kofuji, Saito, Ugawa, and Terao]{mishima2024repetitive}
+Tatsuya Mishima, Kenta Komano, Marie Tabaru, Takefumi Kofuji, Ayako Saito, Yoshikazu Ugawa, and Yasuo Terao.
+\newblock Repetitive pulsed-wave ultrasound stimulation suppresses neural activity by modulating ambient gaba levels via effects on astrocytes.
+\newblock \emph{Frontiers in Cellular Neuroscience}, 18:\penalty0 1361242, 2024.
+
+\bibitem[Rogers et~al.(2007)Rogers, Morgan, Newton, and Gore]{rogers2007assessing}
+Baxter~P Rogers, Victoria~L Morgan, Allen~T Newton, and John~C Gore.
+\newblock Assessing functional connectivity in the human brain by fmri.
+\newblock \emph{Magnetic resonance imaging}, 25\penalty0 (10):\penalty0 1347--1357, 2007.
+
+\bibitem[Van Den~Heuvel and Pol(2010)]{van2010exploring}
+Martijn~P Van Den~Heuvel and Hilleke E~Hulshoff Pol.
+\newblock Exploring the brain network: a review on resting-state fmri functional connectivity.
+\newblock \emph{European neuropsychopharmacology}, 20\penalty0 (8):\penalty0 519--534, 2010.
+
+\bibitem[Chou et~al.(2024)Chou, Deckersbach, Guerin, Wong, Borron, Kanabar, Hayden, Long, Daneshzand, Pace-Schott, et~al.]{chou2024transcranial}
+Tina Chou, Thilo Deckersbach, Bastien Guerin, Karianne~Sretavan Wong, Benjamin~M Borron, Anish Kanabar, Ashley~N Hayden, Marina~P Long, Mohammad Daneshzand, Edward~F Pace-Schott, et~al.
+\newblock Transcranial focused ultrasound of the amygdala modulates fear network activation and connectivity.
+\newblock \emph{Brain Stimulation}, 17\penalty0 (2):\penalty0 312--320, 2024.
+
+\bibitem[Todd et~al.(2018)Todd, Zhang, Arcaro, Becerra, Borsook, Livingstone, and McDannold]{todd2018focused}
+Nick Todd, Yongzhi Zhang, Michael Arcaro, Lino Becerra, David Borsook, Margaret Livingstone, and Nathan McDannold.
+\newblock Focused ultrasound induced opening of the blood-brain barrier disrupts inter-hemispheric resting state functional connectivity in the rat brain.
+\newblock \emph{Neuroimage}, 178:\penalty0 414--422, 2018.
+
+\bibitem[Meng et~al.(2019)Meng, MacIntosh, Shirzadi, Kiss, Bethune, Heyn, Mithani, Hamani, Black, Hynynen, et~al.]{meng2019resting}
+Ying Meng, Bradley~J MacIntosh, Zahra Shirzadi, Alex Kiss, Allison Bethune, Chinthaka Heyn, Karim Mithani, Clement Hamani, Sandra~E Black, Kullervo Hynynen, et~al.
+\newblock Resting state functional connectivity changes after mr-guided focused ultrasound mediated blood-brain barrier opening in patients with alzheimer's disease.
+\newblock \emph{Neuroimage}, 200:\penalty0 275--280, 2019.
+
+\bibitem[Zhang et~al.(2021{\natexlab{b}})Zhang, Li, Lv, Liu, Liu, Tang, Lang, Huang, and He]{zhang2021low}
+Minjian Zhang, Bo~Li, Xiaodong Lv, Sican Liu, Yafei Liu, Rongyu Tang, Yiran Lang, Qiang Huang, and Jiping He.
+\newblock Low-intensity focused ultrasound-mediated attenuation of acute seizure activity based on eeg brain functional connectivity.
+\newblock \emph{Brain Sciences}, 11\penalty0 (6):\penalty0 711, 2021{\natexlab{b}}.
+
+\bibitem[Kuhn et~al.(2023)Kuhn, Spivak, Dang, Becerra, Halavi, Rotstein, Rosenberg, Hiller, Swenson, Cvijanovic, et~al.]{kuhn2023transcranial}
+Taylor Kuhn, Norman~M Spivak, Bianca~H Dang, Sergio Becerra, Sabrina~E Halavi, Natalie Rotstein, Benjamin~M Rosenberg, Sonja Hiller, Andrew Swenson, Luka Cvijanovic, et~al.
+\newblock Transcranial focused ultrasound selectively increases perfusion and modulates functional connectivity of deep brain regions in humans.
+\newblock \emph{Frontiers in Neural Circuits}, 17:\penalty0 1120410, 2023.
+
+\bibitem[Drevets et~al.(2008{\natexlab{a}})Drevets, Savitz, and Trimble]{drevets2008subgenual}
+Wayne~C Drevets, Jonathan Savitz, and Michael Trimble.
+\newblock The subgenual anterior cingulate cortex in mood disorders.
+\newblock \emph{CNS spectrums}, 13\penalty0 (8):\penalty0 663, 2008{\natexlab{a}}.
+
+\bibitem[Greicius et~al.(2007)Greicius, Flores, Menon, Glover, Solvason, Kenna, Reiss, and Schatzberg]{greicius2007resting}
+Michael~D Greicius, Benjamin~H Flores, Vinod Menon, Gary~H Glover, Hugh~B Solvason, Heather Kenna, Allan~L Reiss, and Alan~F Schatzberg.
+\newblock Resting-state functional connectivity in major depression: abnormally increased contributions from subgenual cingulate cortex and thalamus.
+\newblock \emph{Biological psychiatry}, 62\penalty0 (5):\penalty0 429--437, 2007.
+
+\bibitem[Esteban et~al.(2019)Esteban, Markiewicz, Blair, Moodie, Isik, Erramuzpe~Aliaga, Kent, Goncalves, DuPre, Snyder, Oya, Ghosh, Wright, Durnez, Poldrack, and Gorgolewski]{fmriprep1}
+Oscar Esteban, Christopher Markiewicz, Ross~W Blair, Craig Moodie, Ayse~Ilkay Isik, Asier Erramuzpe~Aliaga, James Kent, Mathias Goncalves, Elizabeth DuPre, Madeleine Snyder, Hiroyuki Oya, Satrajit Ghosh, Jessey Wright, Joke Durnez, Russell Poldrack, and Krzysztof~Jacek Gorgolewski.
+\newblock {fMRIPrep}: a robust preprocessing pipeline for functional {MRI}.
+\newblock \emph{Nature Methods}, 16:\penalty0 111--116, 2019.
+\newblock \doi{10.1038/s41592-018-0235-4}.
+
+\bibitem[Esteban et~al.(2018)Esteban, Blair, Markiewicz, Berleant, Moodie, Ma, Isik, Erramuzpe, Kent, DuPre, Sitek, Gomez, Lurie, Ye, Poldrack, and Gorgolewski]{fmriprep2}
+Oscar Esteban, Ross Blair, Christopher~J. Markiewicz, Shoshana~L. Berleant, Craig Moodie, Feilong Ma, Ayse~Ilkay Isik, Asier Erramuzpe, Mathias Kent, James D.~andGoncalves, Elizabeth DuPre, Kevin~R. Sitek, Daniel E.~P. Gomez, Daniel~J. Lurie, Zhifang Ye, Russell~A. Poldrack, and Krzysztof~J. Gorgolewski.
+\newblock fmriprep.
+\newblock \emph{Software}, 2018.
+\newblock \doi{10.5281/zenodo.852659}.
+
+\bibitem[Gorgolewski et~al.(2011)Gorgolewski, Burns, Madison, Clark, Halchenko, Waskom, and Ghosh]{nipype1}
+K.~Gorgolewski, C.~D. Burns, C.~Madison, D.~Clark, Y.~O. Halchenko, M.~L. Waskom, and S.~Ghosh.
+\newblock Nipype: a flexible, lightweight and extensible neuroimaging data processing framework in python.
+\newblock \emph{Frontiers in Neuroinformatics}, 5:\penalty0 13, 2011.
+\newblock \doi{10.3389/fninf.2011.00013}.
+
+\bibitem[Gorgolewski et~al.(2018)Gorgolewski, Esteban, Markiewicz, Ziegler, Ellis, Notter, Jarecka, Johnson, Burns, Manhães-Savio, Hamalainen, Yvernault, Salo, Jordan, Goncalves, Waskom, Clark, Wong, Loney, Modat, Dewey, Madison, Visconti~di Oleggio~Castello, Clark, Dayan, Clark, Keshavan, Pinsard, Gramfort, Berleant, Nielson, Bougacha, Varoquaux, Cipollini, Markello, Rokem, Moloney, Halchenko, Wassermann, Hanke, Horea, Kaczmarzyk, de~Hollander, DuPre, Gillman, Mordom, Buchanan, Tungaraza, Pauli, Iqbal, Sikka, Mancini, Schwartz, Malone, Dubois, Frohlich, Welch, Forbes, Kent, Watanabe, Cumba, Huntenburg, Kastman, Nichols, Eshaghi, Ginsburg, Schaefer, Acland, Giavasis, Kleesiek, Erickson, Küttner, Haselgrove, Correa, Ghayoor, Liem, Millman, Haehn, Lai, Zhou, Blair, Glatard, Renfro, Liu, Kahn, Pérez-García, Triplett, Lampe, Stadler, Kong, Hallquist, Chetverikov, Salvatore, Park, Poldrack, Craddock, Inati, Hinds, Cooper, Perkins, Marina, Mattfeld, Noel, Snoek, Matsubara, Cheung, Rothmei, Urchs, Durnez, Mertz, Geisler, Floren, Gerhard, Sharp, Molina-Romero, Weinstein, Broderick, Saase, Andberg, Harms, Schlamp, Arias, Papadopoulos~Orfanos, Tarbert, Tambini, De~La~Vega, Nickson, Brett, Falkiewicz, Podranski, Linkersdörfer, Flandin, Ort, Shachnev, McNamee, Davison, Varada, Schwabacher, Pellman, Perez-Guevara, Khanuja, Pannetier, McDermottroe, and Ghosh]{nipype2}
+Krzysztof~J. Gorgolewski, Oscar Esteban, Christopher~J. Markiewicz, Erik Ziegler, David~Gage Ellis, Michael~Philipp Notter, Dorota Jarecka, Hans Johnson, Christopher Burns, Alexandre Manhães-Savio, Carlo Hamalainen, Benjamin Yvernault, Taylor Salo, Kesshi Jordan, Mathias Goncalves, Michael Waskom, Daniel Clark, Jason Wong, Fred Loney, Marc Modat, Blake~E Dewey, Cindee Madison, Matteo Visconti~di Oleggio~Castello, Michael~G. Clark, Michael Dayan, Dav Clark, Anisha Keshavan, Basile Pinsard, Alexandre Gramfort, Shoshana Berleant, Dylan~M. Nielson, Salma Bougacha, Gael Varoquaux, Ben Cipollini, Ross Markello, Ariel Rokem, Brendan Moloney, Yaroslav~O. Halchenko, Demian Wassermann, Michael Hanke, Christian Horea, Jakub Kaczmarzyk, Gilles de~Hollander, Elizabeth DuPre, Ashley Gillman, David Mordom, Colin Buchanan, Rosalia Tungaraza, Wolfgang~M. Pauli, Shariq Iqbal, Sharad Sikka, Matteo Mancini, Yannick Schwartz, Ian~B. Malone, Mathieu Dubois, Caroline Frohlich, David Welch, Jessica Forbes, James Kent, Aimi Watanabe, Chad Cumba, Julia~M. Huntenburg, Erik Kastman, B.~Nolan Nichols, Arman Eshaghi, Daniel Ginsburg, Alexander Schaefer, Benjamin Acland, Steven Giavasis, Jens Kleesiek, Drew Erickson, René Küttner, Christian Haselgrove, Carlos Correa, Ali Ghayoor, Franz Liem, Jarrod Millman, Daniel Haehn, Jeff Lai, Dale Zhou, Ross Blair, Tristan Glatard, Mandy Renfro, Siqi Liu, Ari~E. Kahn, Fernando Pérez-García, William Triplett, Leonie Lampe, Jörg Stadler, Xiang-Zhen Kong, Michael Hallquist, Andrey Chetverikov, John Salvatore, Anne Park, Russell Poldrack, R.~Cameron Craddock, Souheil Inati, Oliver Hinds, Gavin Cooper, L.~Nathan Perkins, Ana Marina, Aaron Mattfeld, Maxime Noel, Lukas Snoek, K~Matsubara, Brian Cheung, Simon Rothmei, Sebastian Urchs, Joke Durnez, Fred Mertz, Daniel Geisler, Andrew Floren, Stephan Gerhard, Paul Sharp, Miguel Molina-Romero, Alejandro Weinstein, William Broderick, Victor Saase, Sami~Kristian Andberg, Robbert Harms, Kai Schlamp, Jaime Arias, Dimitri Papadopoulos~Orfanos, Claire Tarbert, Arielle Tambini, Alejandro De~La~Vega, Thomas Nickson, Matthew Brett, Marcel Falkiewicz, Kornelius Podranski, Janosch Linkersdörfer, Guillaume Flandin, Eduard Ort, Dmitry Shachnev, Daniel McNamee, Andrew Davison, Jan Varada, Isaac Schwabacher, John Pellman, Martin Perez-Guevara, Ranjeet Khanuja, Nicolas Pannetier, Conor McDermottroe, and Satrajit Ghosh.
+\newblock Nipype.
+\newblock \emph{Software}, 2018.
+\newblock \doi{10.5281/zenodo.596855}.
+
+\bibitem[Tustison et~al.(2010)Tustison, Avants, Cook, Zheng, Egan, Yushkevich, and Gee]{n4}
+N.~J. Tustison, B.~B. Avants, P.~A. Cook, Y.~Zheng, A.~Egan, P.~A. Yushkevich, and J.~C. Gee.
+\newblock N4itk: Improved n3 bias correction.
+\newblock \emph{IEEE Transactions on Medical Imaging}, 29\penalty0 (6):\penalty0 1310--1320, 2010.
+\newblock ISSN 0278-0062.
+\newblock \doi{10.1109/TMI.2010.2046908}.
+
+\bibitem[Avants et~al.(2008)Avants, Epstein, Grossman, and Gee]{ants}
+B.B. Avants, C.L. Epstein, M.~Grossman, and J.C. Gee.
+\newblock Symmetric diffeomorphic image registration with cross-correlation: Evaluating automated labeling of elderly and neurodegenerative brain.
+\newblock \emph{Medical Image Analysis}, 12\penalty0 (1):\penalty0 26--41, 2008.
+\newblock ISSN 1361-8415.
+\newblock \doi{10.1016/j.media.2007.06.004}.
+
+\bibitem[Zhang et~al.(2001)Zhang, Brady, and Smith]{fsl_fast}
+Y.~Zhang, M.~Brady, and S.~Smith.
+\newblock Segmentation of brain {MR} images through a hidden markov random field model and the expectation-maximization algorithm.
+\newblock \emph{IEEE Transactions on Medical Imaging}, 20\penalty0 (1):\penalty0 45--57, 2001.
+\newblock ISSN 0278-0062.
+\newblock \doi{10.1109/42.906424}.
+
+\bibitem[Dale et~al.(1999)Dale, Fischl, and Sereno]{fs_reconall}
+Anders~M. Dale, Bruce Fischl, and Martin~I. Sereno.
+\newblock Cortical surface-based analysis: I. segmentation and surface reconstruction.
+\newblock \emph{NeuroImage}, 9\penalty0 (2):\penalty0 179--194, 1999.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1006/nimg.1998.0395}.
+
+\bibitem[Klein et~al.(2017)Klein, Ghosh, Bao, Giard, Häme, Stavsky, Lee, Rossa, Reuter, Neto, and Keshavan]{mindboggle}
+Arno Klein, Satrajit~S. Ghosh, Forrest~S. Bao, Joachim Giard, Yrjö Häme, Eliezer Stavsky, Noah Lee, Brian Rossa, Martin Reuter, Elias~Chaibub Neto, and Anisha Keshavan.
+\newblock Mindboggling morphometry of human brains.
+\newblock \emph{PLOS Computational Biology}, 13\penalty0 (2):\penalty0 e1005350, 2017.
+\newblock ISSN 1553-7358.
+\newblock \doi{10.1371/journal.pcbi.1005350}.
+
+\bibitem[Fonov et~al.(2009)Fonov, Evans, McKinstry, Almli, and Collins]{mni152nlin2009casym}
+VS~Fonov, AC~Evans, RC~McKinstry, CR~Almli, and DL~Collins.
+\newblock Unbiased nonlinear average age-appropriate brain templates from birth to adulthood.
+\newblock \emph{NeuroImage}, 47, Supplement 1:\penalty0 S102, 2009.
+\newblock \doi{10.1016/S1053-8119(09)70884-5}.
+
+\bibitem[Jenkinson et~al.(2002)Jenkinson, Bannister, Brady, and Smith]{mcflirt}
+Mark Jenkinson, Peter Bannister, Michael Brady, and Stephen Smith.
+\newblock Improved optimization for the robust and accurate linear registration and motion correction of brain images.
+\newblock \emph{NeuroImage}, 17\penalty0 (2):\penalty0 825--841, 2002.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1006/nimg.2002.1132}.
+
+\bibitem[Greve and Fischl(2009)]{bbr}
+Douglas~N Greve and Bruce Fischl.
+\newblock Accurate and robust brain image alignment using boundary-based registration.
+\newblock \emph{NeuroImage}, 48\penalty0 (1):\penalty0 63--72, 2009.
+\newblock ISSN 1095-9572.
+\newblock \doi{10.1016/j.neuroimage.2009.06.060}.
+
+\bibitem[Abraham et~al.(2014)Abraham, Pedregosa, Eickenberg, Gervais, Mueller, Kossaifi, Gramfort, Thirion, and Varoquaux]{nilearn}
+Alexandre Abraham, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux.
+\newblock Machine learning for neuroimaging with scikit-learn.
+\newblock \emph{Frontiers in Neuroinformatics}, 8, 2014.
+\newblock ISSN 1662-5196.
+\newblock \doi{10.3389/fninf.2014.00014}.
+
+\bibitem[Dadi et~al.(2020)Dadi, Varoquaux, Machlouzarides-Shalit, Gorgolewski, Wassermann, Thirion, and Mensch]{dadi2020fine}
+Kamalaker Dadi, Ga{\"e}l Varoquaux, Antonia Machlouzarides-Shalit, Krzysztof~J Gorgolewski, Demian Wassermann, Bertrand Thirion, and Arthur Mensch.
+\newblock Fine-grain atlases of functional modes for fmri analysis.
+\newblock \emph{NeuroImage}, 221:\penalty0 117126, 2020.
+
+\bibitem[Yeo et~al.(2011)Yeo, Krienen, Sepulcre, Sabuncu, Lashkari, Hollinshead, Roffman, Smoller, Z{\"o}llei, Polimeni, Fischl, Liu, and Buckner]{yeo2011organization}
+B.~T.~Thomas Yeo, Fenna~M. Krienen, Jorge Sepulcre, Mert~R. Sabuncu, Danial Lashkari, Marion Hollinshead, Joshua~L. Roffman, Jordan~W. Smoller, Lilla Z{\"o}llei, Jonathan~R. Polimeni, Bruce Fischl, Hesheng Liu, and Randy~L. Buckner.
+\newblock The organization of the human cerebral cortex estimated by intrinsic functional connectivity.
+\newblock \emph{Journal of Neurophysiology}, 106\penalty0 (3):\penalty0 1125--1165, 2011.
+\newblock \doi{10.1152/jn.00338.2011}.
+
+\bibitem[Raichle et~al.(2001)Raichle, MacLeod, Snyder, Powers, Gusnard, and Shulman]{Raichle2001}
+Marcus~E. Raichle, Ann~Mary MacLeod, Abraham~Z. Snyder, William~J. Powers, Debbie~A. Gusnard, and Gordon~L. Shulman.
+\newblock A default mode of brain function.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 98\penalty0 (2):\penalty0 676--682, 2001.
+\newblock \doi{10.1073/pnas.98.2.676}.
+
+\bibitem[Mason et~al.(2007)Mason, Norton, Van~Horn, Wegner, Grafton, and Macrae]{Mason2007}
+M.~F. Mason, M.~I. Norton, J.~D. Van~Horn, D.~M. Wegner, S.~T. Grafton, and C.~N. Macrae.
+\newblock Wandering minds: The default network and stimulus-independent thought.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 104\penalty0 (21):\penalty0 887--892, 2007.
+\newblock \doi{10.1073/pnas.0610841104}.
+
+\bibitem[Christoff et~al.(2009)Christoff, Gordon, Smallwood, Smith, and Schooler]{Christoff2009}
+K.~Christoff, A.~M. Gordon, J.~Smallwood, R.~Smith, and J.~W. Schooler.
+\newblock Experience sampling during fmri reveals default network and executive system contributions to mind wandering.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 106\penalty0 (21):\penalty0 8719--8724, 2009.
+\newblock \doi{10.1073/pnas.0900234106}.
+
+\bibitem[Cole et~al.(2013)Cole, Reynolds, Power, Repovs, Anticevic, and Braver]{cole2013multi}
+Michael~W. Cole, John~R. Reynolds, Jonathan~D. Power, Grega Repovs, Alan Anticevic, and Todd~S. Braver.
+\newblock Multi-task connectivity reveals flexible hubs for adaptive task control.
+\newblock \emph{Nature Neuroscience}, 16\penalty0 (9):\penalty0 1348--1355, 2013.
+\newblock \doi{10.1038/nn.3470}.
+
+\bibitem[Whitfield-Gabrieli and Ford(2012)]{whitfield2012default}
+Susan Whitfield-Gabrieli and Judith~M. Ford.
+\newblock Default mode network activity and connectivity in psychopathology.
+\newblock \emph{Annual Review of Clinical Psychology}, 8:\penalty0 49--76, 2012.
+\newblock \doi{10.1146/annurev-clinpsy-032511-143049}.
+
+\bibitem[Mayberg et~al.(2005)Mayberg, Lozano, Voon, McNeely, Seminowicz, Hamani, Schwalb, and Kennedy]{Mayberg2005}
+Helen~S. Mayberg, Andres~M. Lozano, Valerie Voon, Heather~E. McNeely, David Seminowicz, Clement Hamani, Jason~M. Schwalb, and Sidney~H. Kennedy.
+\newblock Deep brain stimulation for treatment-resistant depression.
+\newblock \emph{Neuron}, 45\penalty0 (5):\penalty0 651--660, 2005.
+\newblock \doi{10.1016/j.neuron.2005.02.014}.
+
+\bibitem[Drevets et~al.(2008{\natexlab{b}})Drevets, Savitz, and Trimble]{Drevets2008}
+Wayne~C. Drevets, Jonathan Savitz, and Michael Trimble.
+\newblock The subgenual anterior cingulate cortex in mood disorders.
+\newblock \emph{CNS Spectrums}, 13\penalty0 (8):\penalty0 663--681, 2008{\natexlab{b}}.
+\newblock \doi{10.1017/S1092852900013754}.
+
+\bibitem[Verhagen et~al.(2019)Verhagen, Gallea, Folloni, Constans, Jensen, Ahnine, Roumazeilles, Santin, Ahmed, Lehericy, Klein-Fl{\"u}gge, Krug, Mars, Rushworth, Pouget, Aubry, and Sallet]{Verhagen2019-ae}
+Lennart Verhagen, C{\'e}cile Gallea, Davide Folloni, Charlotte Constans, Daria~Ea Jensen, Harry Ahnine, L{\'e}a Roumazeilles, Mathieu Santin, Bashir Ahmed, St{\'e}phane Lehericy, Miriam~C Klein-Fl{\"u}gge, Kristine Krug, Rogier~B Mars, Matthew~Fs Rushworth, Pierre Pouget, Jean-Fran{\c c}ois Aubry, and Jerome Sallet.
+\newblock Offline impact of transcranial focused ultrasound on cortical activation in primates.
+\newblock \emph{Elife}, 8, February 2019.
+
+\bibitem[Zhang et~al.(2023)Zhang, Guo, Zuo, Long, Hu, Li, Su, Wang, and Liu]{zhang2023excitatory}
+Tingting Zhang, Bingqi Guo, Zhentao Zuo, Xiaojing Long, Shimin Hu, Siran Li, Xin Su, Yuping Wang, and Chunyan Liu.
+\newblock Excitatory-inhibitory modulation of transcranial focus ultrasound stimulation on human motor cortex.
+\newblock \emph{CNS Neuroscience \& Therapeutics}, 29\penalty0 (12):\penalty0 3829--3841, 2023.
+
+\bibitem[Kubanek et~al.(2016)Kubanek, Shi, Marsh, Chen, Deng, and Cui]{kubanek2016ultrasound}
+Jan Kubanek, Jingyi Shi, Jon Marsh, Di~Chen, Cheri Deng, and Jianmin Cui.
+\newblock Ultrasound modulates ion channel currents.
+\newblock \emph{Scientific reports}, 6\penalty0 (1):\penalty0 24170, 2016.
+
+\bibitem[Yang et~al.(2015)Yang, Lu, Lin, Chang, and Huang]{yang2015enhancement}
+Feng-Yi Yang, Wen-Wei Lu, Wei-Ting Lin, Chi-Wei Chang, and Sin-Luo Huang.
+\newblock Enhancement of neurotrophic factors in astrocyte for neuroprotective effects in brain disorders using low-intensity pulsed ultrasound stimulation.
+\newblock \emph{Brain stimulation}, 8\penalty0 (3):\penalty0 465--473, 2015.
+
+\bibitem[Buxton(2013)]{buxton2013physics}
+Richard~B Buxton.
+\newblock The physics of functional magnetic resonance imaging (fmri).
+\newblock \emph{Reports on Progress in Physics}, 76\penalty0 (9):\penalty0 096601, 2013.
+
+\bibitem[Logothetis(2008)]{logothetis2008we}
+Nikos~K Logothetis.
+\newblock What we can do and what we cannot do with fmri.
+\newblock \emph{Nature}, 453\penalty0 (7197):\penalty0 869--878, 2008.
+
+\bibitem[Kim et~al.(2023)Kim, Lee, Weisholtz, and Yoo]{kim2023transcranial}
+Hyun-Chul Kim, Wonhye Lee, Daniel~S Weisholtz, and Seung-Schik Yoo.
+\newblock Transcranial focused ultrasound stimulation of cortical and thalamic somatosensory areas in human.
+\newblock \emph{PLoS One}, 18\penalty0 (7):\penalty0 e0288654, 2023.
+
+\bibitem[Mueller et~al.(2014)Mueller, Legon, Opitz, Sato, and Tyler]{mueller2014transcranial}
+Jerel Mueller, Wynn Legon, Alexander Opitz, Tomokazu~F Sato, and William~J Tyler.
+\newblock Transcranial focused ultrasound modulates intrinsic and evoked eeg dynamics.
+\newblock \emph{Brain stimulation}, 7\penalty0 (6):\penalty0 900--908, 2014.
+
+\bibitem[Kim et~al.(2022{\natexlab{b}})Kim, Kim, Lee, Hwang, Yoo, and Lee]{kim2022neuromodulation}
+Young~Goo Kim, Song~E Kim, Jihye Lee, Sungeun Hwang, Seung-Schik Yoo, and Hyang~Woon Lee.
+\newblock Neuromodulation using transcranial focused ultrasound on the bilateral medial prefrontal cortex.
+\newblock \emph{Journal of clinical medicine}, 11\penalty0 (13):\penalty0 3809, 2022{\natexlab{b}}.
+
+\bibitem[Min et~al.(2011)Min, Bystritsky, Jung, Fischer, Zhang, Maeng, In~Park, Chung, Jolesz, and Yoo]{min2011focused}
+Byoung-Kyong Min, Alexander Bystritsky, Kwang-Ik Jung, Krisztina Fischer, Yongzhi Zhang, Lee-So Maeng, Sang In~Park, Yong-An Chung, Ferenc~A Jolesz, and Seung-Schik Yoo.
+\newblock Focused ultrasound-mediated suppression of chemically-induced acute epileptic eeg activity.
+\newblock \emph{BMC neuroscience}, 12:\penalty0 1--12, 2011.
+
+\end{thebibliography}

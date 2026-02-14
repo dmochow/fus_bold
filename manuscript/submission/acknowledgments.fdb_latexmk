@@ -1,0 +1,12 @@
+# Fdb version 4
+["pdflatex"] 1765296464.56165 "acknowledgments.tex" "acknowledgments.pdf" "acknowledgments" 1765296466.21744 2
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "acknowledgments.aux" 1765296464.56128 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "acknowledgments.tex" 1765296396.53552 156 74ec1844aaae6b300783ad0070b92ea4 ""
+  (generated)
+  "acknowledgments.aux"
+  "acknowledgments.log"
+  "acknowledgments.pdf"
+  (rewritten before read)

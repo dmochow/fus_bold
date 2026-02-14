@@ -10,22 +10,28 @@
 \usepackage{siunitx}
 \usepackage{hyperref}
 \usepackage{color}
+\makeatletter
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
+  {1.5ex plus .2ex minus .2ex}%
+  {0.8ex plus .1ex}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
 
 \newcommand{\etal}{\textit{et~al.}}
 
 \begin{document}
 
-\title{Insert Title: Focused Ultrasound Modulation of BOLD Functional Connectivity}
+\title{Transcranial Focused Ultrasound of the Human Subgenual Anterior Cingulate Reconfigures Resting State Connectivity: A Sham-Controlled fMRI Study}
 
-\author{First~A. Author,~\IEEEmembership{Member,~IEEE}, Second~B. Author, and Third~C. Author%
-\thanks{Manuscript received Month DD, YYYY; revised Month DD, YYYY; accepted Month DD, YYYY. Date of publication Month DD, YYYY; date of current version Month DD, YYYY. This work was supported by XYZ (grant number). (Corresponding author: First Author.)}%
-\thanks{First Author and Second Author are with the Department of Biomedical Engineering, Example University, City, State ZIP, USA (e-mail: first.author@example.edu).}%
-\thanks{Third Author is with the Department of Neurology, Example Medical Center, City, State ZIP, USA.}%
+\author{Amilcar~Malave, Emily~Valera, Andrew~Birnbaum, Elisa~Konofagou, and Jacek~P.~Dmochowski%
+\thanks{Manuscript received Month DD, YYYY; revised Month DD, YYYY; accepted Month DD, YYYY. Date of publication Month DD, YYYY; date of current version Month DD, YYYY.}%
+\thanks{A. Malave, E. Valera, A. Birnbaum, and J. P. Dmochowski are with the Department of Biomedical Engineering, The City College of New York, City University of New York, New York, NY, USA (e-mail: jacek.dmochowski@ccny.cuny.edu).}%
+\thanks{E. Konofagou is with the Department of Biomedical Engineering and the Department of Radiology, Columbia University, New York, NY, USA.}%
 \thanks{Color versions of one or more of the figures in this article are available online at https://ieeexplore.ieee.org.}%
 \thanks{Digital Object Identifier (DOI): 10.1109/TBME.XXXX.XXXXXXX}}
 
 \markboth{IEEE Transactions on Biomedical Engineering,~Vol.~XX, No.~XX, Month~20XX}%
-{Author \MakeLowercase{\textit{et al.}}: Insert Running Title}
+{Malave \MakeLowercase{\textit{et al.}}: Insert Running Title}
 
 \maketitle
 
@@ -64,20 +70,21 @@
   \newpage
 \fi
 
-\appendices
-\section{Extended Methods}
-\label{sec:appendix}
-\input{sections/appendix}
+%\appendices
+%\section{Extended Methods}
+%\label{sec:appendix}
+%\input{sections/appendix}
 
-\section*{Data Availability}
-The data that support the findings of this study will be made available from the corresponding author upon reasonable request, subject to institutional review board restrictions.
+%\section*{Data Availability}
+%The data that support the findings of this study will be made available from the corresponding author upon reasonable request, subject to institutional review board restrictions.
 
-\section*{Code Availability}
-The analysis code is available at \href{https://github.com/USERNAME/REPO}{https://github.com/USERNAME/REPO}.
+%\section*{Code Availability}
+%The analysis code is available at \href{https://github.com/USERNAME/REPO}{https://github.com/USERNAME/REPO}.
 
-\nocite{smith2020fus,doe2021bold}
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
+
+\input{sections/results_figures}
 
 \end{document}

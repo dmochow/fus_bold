@@ -1,0 +1,121 @@
+\subsection*{Participants}
+\noindent
+Sixteen healthy adults (7 females; age 26 $\pm$ 7 years, mean $\pm$ standard deviation) participated in a within-subjects study consisting of two sessions employing Active and Sham tFUS. Sessions were spaced two weeks apart to ensure sufficient washout of effects. The order of the sessions was randomized and counterbalanced across the cohort. Experimental procedures were approved by the Institutional Review Board of the City University of New York, and subjects provided written informed consent prior to participation. 
+
+\subsection*{tFUS Parameters}
+\noindent
+tFUS was delivered at 500 kHz with a circular transducer (Sonic Concepts CTX-500) driven by an integrated function generator and amplifier (Sonic Concepts NeuroFUS; Fig \ref{fig:process_figure}a). The waveform was pulsed with a repetition frequency (PRF) of 40 Hz and a duty cycle of 30\%. Sonication duration was 20 s, with a 40 s interval between successive sonications (Fig \ref{fig:process_figure}e). All subjects received a total of 5 sonications. Acoustic intensity was measured in a water tank under free-field conditions with a calibrated hydrophone (ONDA corporation) as $I_{\mathrm{spta}} = 667$ mW/cm$^2$. The empirical beampattern is shown in Fig \ref{fig:process_figure}c.
+
+The transducer positioning relied on a computational procedure to identify the subject-specific optimal scalp location for targeting the sgACC (nominal target location shown in Fig \ref{fig:process_figure}b). Namely, the subject’s anatomical MRI was employed to exhaustively search across a broad range of discretized scalp positions to identify the coordinates on the forehead (frontal pole region) whose normal vector most closely intersected the right sgACC. This resulted in a variable distance to the target across subjects ranging from 5 to 6.5 cm. The focal depth of the transducer was set to 6 cm and verified empirically with measurements in a water tank (Fig \ref{fig:process_figure}c). The transducer was fixed to the subject's scalp using an elastic headband (Fig \ref{fig:process_figure}a). 
+
+\subsection*{MRI and fMRI}
+\noindent
+Imaging was performed at 3 T with a Siemens Magnetom Prisma. Structural images were acquired with a T1-weighted MPRAGE sequence employing isotropic 0.8 mm voxels. Resting-state functional BOLD scans were acquired with an echo-planar imaging (EPI) sequence employing 2 mm isotropic voxels, a repetition time (TR) of 1000 ms, echo time (TE) of 37 ms, a flip angle of 52 degrees, and posterior–to–anterior phase encoding. Subjects were instructed to rest but stay awake and to not think about anything in particular.
+
+The duration of the BOLD acquisition was 15 minutes (900 TRs). During the Active tFUS session, sonication commenced at 300 s (Fig \ref{fig:process_figure}d); no sonication was applied during the Sham session. Throughout the manuscript, we refer to the 5 minute pre-stimulation time window as ``baseline'' or ``Pre''. Similarily, we denote the last 5 minutes of each BOLD acquisition as ``Post''. 
+
+Subjects did not report perceptions of tFUS after the conclusion of their two sessions. 
+
+\subsection*{Anatomical preprocessing.}
+\noindent
+Processing of anatomical images was performed in \emph{fMRIPrep} \cite{fmriprep1,fmriprep2,nipype1,nipype2} (Fig \ref{fig:process_figure}f). T1-weighted (T1w) images were corrected for intensity non-uniformity (INU) with \texttt{N4BiasFieldCorrection} \cite{n4}, distributed with ANTs \cite{ants}, and used as the T1w-reference throughout the workflow. The T1w-reference was then skull-stripped with a \emph{Nipype} implementation of the \texttt{antsBrainExtraction.sh} workflow (from ANTs), using OASIS30ANTs as the target template. Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain-extracted T1w using \texttt{fast} \cite{fsl_fast}. Brain surfaces were reconstructed using \texttt{recon-all} \cite{fs_reconall}, and the brain mask estimated previously was refined with a custom variation of the method to reconcile ANTs-derived and FreeSurfer-derived segmentations of the cortical gray-matter of Mindboggle \cite{mindboggle}. Volume-based spatial normalization to a standard space -- the ICBM 152 Nonlinear Asymmetrical template, version 2009c \cite{mni152nlin2009casym} -- was performed through nonlinear registration with \texttt{antsRegistration} (ANTs 2.5.1), using brain-extracted versions of both the T1w reference and the T1w template. 
+
+
+\subsection*{BOLD preprocessing}
+\noindent 
+All functional MRI data were preprocessed with \texttt{fMRIPrep} (v24.0.0) \cite{fmriprep1,fmriprep2}. For each run, fMRIPrep applied slice–timing correction, estimated head motion relative to a reference volume with MCFLIRT \cite{mcflirt}, and coregistered the BOLD reference to each participant’s T1-weighted anatomy using FreeSurfer’s boundary–based registration (BBR; 6 degrees of freedom) \cite{bbr}. Outputs were written to the MNI152NLin2009cAsym space along with confound time series (e.g., framewise displacement, DVARS, CompCor, global signals) and HTML reports for quality control.
+
+Subsequent denoising and time–series extraction were performed in Python with \emph{Nilearn} \cite{nilearn} using a probabilistic functional parcellation. Specifically, we used the \texttt{DiFuMo} (Dictionary of Functional Modes) probabilistic atlas \cite{dadi2020fine}. Because this atlas provides probabilistic component maps rather than hard labels, we employed the Nilearn function \texttt{NiftiMapsMasker} to project the atlas maps onto each preprocessed BOLD run. Regional time series were then standardized (z–scored) and band–pass filtered (0.01–0.10 Hz). We regressed out the six rigid–body motion parameters (translations and rotations) and their first temporal derivatives. 
+
+In summary, preprocessing followed a standard fMRIPrep workflow (slice–timing correction, motion estimation, BBR to T1w, MNI normalization) and custom Python code then extracted probabilistic–atlas regional signals with minimal motion regression and 0.01–0.10\,Hz filtering to produce condition–specific time series used in all downstream connectivity analyses.
+
+
+\subsection*{Whole-brain and network-level effects}
+\noindent
+Our inferential plan followed a hierarchical design. As the primary analysis, we asked whether the temporal trajectory of sgACC FC differed between Active and Sham conditions. Let $\mathrm{FC}_{ict}$ denote the subject-level mean sgACC–whole-brain FC for subject $i$, condition $c\in\{\text{Sham},\text{Active}\}$, and time window $t\in\{\text{Pre},\text{tFUS},\text{Post}\}$. We fit a linear mixed-effects model with treatment coding (reference values of \emph{Sham} and \emph{Pre} for condition and time window, respectively), fixed effects for time, condition, and their interaction, and a random intercept for subject:
+\[
+\begin{aligned}
+\mathrm{FC}_{ict} \;=\;& \beta_0
++ \beta_{\text{fus}}\,\mathbb{I}[t=\text{tFUS}]
++ \beta_{\text{post}}\,\mathbb{I}[t=\text{Post}]
++ \beta_{\text{act}}\,\mathbb{I}[c=\text{Active}]\\
+&+ \beta_{\text{fus:act}}\,\mathbb{I}[t=\text{tFUS}]\,\mathbb{I}[c=\text{Active}]
++ \beta_{\text{post:act}}\,\mathbb{I}[t=\text{Post}]\,\mathbb{I}[c=\text{Active}]
++ u_i + \varepsilon_{ict},
+\end{aligned}
+\]
+where $\mathbb{I}[\cdot]$ is an indicator function, $\beta_0$ models the mean FC of the Sham baseline, $\beta_{\text{fus}}$ and $\beta_{\text{post}}$ are within-sham changes versus \ Pre, $\beta_{\text{act}}$ is the Active–Sham difference at Pre, and the interaction terms are difference-in-differences (DiD) contrasts: $\beta_{\text{fus:act}}$ tests whether the Pre$\rightarrow$tFUS change differs between Active and Sham, and $\beta_{\text{post:act}}$ tests whether the Pre$\rightarrow$Post change differs between Active and Sham. The random intercept $u_i\sim\mathcal{N}(0,\sigma_u^2)$ captures subject-specific baselines; $\varepsilon_{ict}\sim\mathcal{N}(0,\sigma^2)$ are the model residuals. The prespecified contrast was the two-sided test of the Pre$\rightarrow$Post DiD ($H_0\!:\,\beta_{\text{post:act}}=0$, $\alpha=0.05$). A \emph{planned} secondary contrast evaluated the peri-stimulation DiD ($H_0\!:\,\beta_{\text{fus:act}}=0$). To avoid treating edges as independent, FC was aggregated to the subject level within each (condition, time) cell prior to modeling; inference on fixed effects used Wald $z$-tests.
+
+Conditioned on observing a significant \emph{positive} whole-brain effect in the primary test, we conducted secondary network-level analyses to determine which large-scale networks absorbed the additional sgACC coupling. For each canonical brain network in the Yeo-7 network parcellation \cite{yeo2011organization} (Visual, Cognitive Control, Default Mode, Dorsal Attention, Limbic, Salience, Somatomotor), we formed subject-level baseline-referenced changes ($\Delta\mathrm{FC}$) and tested the directional hypothesis that Active stimulation increases sgACC connectivity more than Sham:
+\[
+H_0:\ \Delta\mathrm{FC}_{\text{active}} - \Delta\mathrm{FC}_{\text{sham}} \le 0
+\quad\text{vs.}\quad
+H_1:\ \Delta\mathrm{FC}_{\text{active}} - \Delta\mathrm{FC}_{\text{sham}} > 0.
+\]
+These were implemented as subject-level paired t-tests comparing baseline-referenced $\Delta\mathrm{FC}$ between Active and Sham conditions. Multiple comparisons across networks and time windows were controlled using the Benjamini–Hochberg false discovery rate at $q=0.05$. For interpretability, we report effect sizes (mean differences in $\Delta\mathrm{FC}$) with two-sided 95\% confidence intervals alongside the one-sided $p$-values. All tests, sidedness, and error-rate control procedures were specified \emph{a priori} at the analysis-family level as described above.
+
+\subsection*{Analysis of baseline FC effects.}
+\noindent
+To assess whether the observed connectivity changes could be attributed to a ``regression-to-the-mean'' (RTM), we examined how baseline sgACC connectivity relates to the subsequent change, \(\Delta \mathrm{FC}\), and whether the relationship between baseline FC and $\Delta \mathrm{FC}$ differs between conditions. For each subject \(i\), condition \(c\in\{\text{Sham},\text{Active}\}\), and follow-up window \(t\in\{\text{tFUS},\text{Post}\}\), we defined
+\[
+\Delta \mathrm{FC}_{ict} \;=\; \mathrm{FC}_{ict} - \mathrm{FC}_{ic,\mathrm{pre}}.
+\]
+We then fit an ordinary least squares (OLS) model that pooled tFUS and Post windows for each subject\(\times\)condition (two rows per subject\(\times\)condition; \(N=16\times 2\times 2=64\)). The model uses subject fixed effects \((\alpha_i)\) and a time-window fixed effect (with tFUS as the reference) so that mean differences between tFUS and Post are absorbed without estimating separate slopes per window:
+\[
+\Delta \mathrm{FC}_{ict}
+= \alpha_i
++ \gamma\,\mathbb{I}[t=\text{Post}]
++ \beta_1\,\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}
++ \beta_2\,\mathbb{I}[c=\text{Active}]
++ \beta_3\,\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}\times \mathbb{I}[c=\text{Active}]
++ \varepsilon_{ict}.
+\]
+Here, \(\widetilde{\mathrm{FC}}_{ic,\mathrm{pre}}\) is the centered subject\(\times\)condition baseline. The coefficient \(\gamma\) captures the post--tFUS \(\Delta \mathrm{FC}\) that is \emph{shared} across conditions. The primary hypothesis test is \(H_0:\beta_3=0\) (i.e., equivalent regression slopes in Sham and Active). Inference used cluster-robust standard errors with subjects as clusters. For visualization (Fig.~\ref{fig:rtm_slope_pooled_2panel}), we plotted baseline FC vs.\ \(\Delta \mathrm{FC}\) separately for Sham and Active conditions, displaying window-specific markers and the corresponding regression line from the OLS model.
+
+
+\subsection*{Distance as a moderator of the time$\times$condition effect.}
+\noindent
+We tested whether scalp-to-sgACC distance moderates the effect of tFUS on sgACC-centered FC. For each subject $i$, condition $c\in\{\mathrm{Sham},\mathrm{Active}\}$, and time window $t\in\{\mathrm{Pre},\mathrm{tFUS},\mathrm{Post}\}$, we fit a linear mixed-effects model with a subject-specific random intercept:
+\[
+\begin{aligned}
+\mathrm{FC}_{ict} &=
+\alpha_i
++ \sum_{u\in\{\mathrm{tFUS},\mathrm{Post}\}}\gamma_u\,\mathbb{I}[t=u]
++ \delta\,\mathbb{I}[c=\mathrm{Active}]
++ \eta\,\mathrm{distance}_z 
++ \sum_{u}\eta_u\,\mathbb{I}[t=u]\cdot \mathrm{distance}_z \\
+&\quad
++ \lambda\,\mathbb{I}[c=\mathrm{Active}]\cdot \mathrm{distance}_z
++ \sum_{u}\kappa_u\,\mathbb{I}[t=u]\cdot \mathbb{I}[c=\mathrm{Active}]\cdot \mathrm{distance}_z
++ \varepsilon_{ict},
+\end{aligned}
+\]
+where $\alpha_i$ is a subject-specific random intercept, $\gamma_u, u\in\{\mathrm{tFUS},\mathrm{Post}\}$ are fixed effects for time-window, $\eta$ is a fixed effect for z-scored scalp-to-sgACC distance ($\mathrm{distance}_z$, mean $=58$\,mm, SD $=5$\,mm), $\eta_u$ and $\lambda$ capture the interactions between time-distance and condition-distance, respectively, and finally, $\kappa_u$ is the three-way interaction between time window, condition, and distance. 
+
+Treatment coding used $\mathrm{Pre}$ (time) and $\mathrm{Sham}$ (condition) as references. The moderation analysis tests for a significant effect of distance on the time-condition interaction: $H_0\!:\ \kappa_{\mathrm{post}}=0$. 
+
+In order to compute the scalp-to-sgACC distance, we manually measured the distance of the line segment connecting the center of the transducer to the visually identified sgACC location on the T1w MRI.
+
+\subsection*{Distance analysis: difference-in-differences correlation}
+\noindent
+To visualize the relationship between connectivity change and scalp-to-sgACC distance, we correlated each participant’s scalp-to-sgACC distance to the DiD of the sgACC coupling change. For subject $i$ and time window $t \in \{\text{tFUS},\text{Post}\}$ we computed baseline-referenced changes:
+\[
+\Delta\mathrm{FC}^{(c)}_{i,t} \;=\; \mathrm{FC}^{(c)}_{i,t} \;-\; \mathrm{FC}^{(c)}_{i,\mathrm{Pre}},
+\quad c \in \{\text{Sham}, \text{Active}\},
+\]
+and the paired DiD contrast:
+\[
+\mathrm{DiD}_{i,t} \;=\; \Delta\mathrm{FC}^{(\text{active})}_{i,t} \;-\; \Delta\mathrm{FC}^{(\text{sham})}_{i,t}.
+\]
+
+In Figure \ref{fig:distance_loess}, we plot the scatter and report Spearman correlation coefficients $\rho$ between $\mathrm{DiD}_{i,t}$ and scalp-to-sgACC distance (mm). We report two-sided 95\% CIs via 10,000 bootstraped resamples, together with slope estimates computed with both OLS and Theil–Sen robust regression (units of $\Delta\mathrm{FC}$ per 10\,mm). 
+
+%As a parametric check we fit
+%\[
+%\mathrm{DiD}_{i,t} \;=\; \alpha_t + \beta_t\,\widetilde{\mathrm{distance}}_i + \varepsilon_{i,t},
+%\]
+%with $\widetilde{\mathrm{distance}}$ $z$-scored across participants and heteroskedasticity- and cluster-robust SEs (cluster$=$subject). 
+
+
+%\subsection{Effect Size and Uncertainty}
+%Report how confidence intervals, bootstrap procedures, or Bayesian models were used to quantify uncertainty.
